@@ -20,6 +20,10 @@ nav a img {
     vertical-align: middle;
 }
 
-nav a i {
+nav i {
     color: #ababaf;
+}
+
+.card-panel {
+    background-color: #efefe6;
 }
