@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    background-color: #fff;
+    color: #697272;
+}
+
+nav ul li a{
+    color: #ababaf;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a img {
+    height: auto;
+    width: auto;
+    max-height: 45px;
+    max-width: 45px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+nav a i {
+    color: #ababaf;
+}
