@@ -26,8 +26,14 @@ nav i {
 
 .card-panel {
     background-color: #efefe6;
+    border-radius: 15px;
 }
 
 .card {
     background-color: #efefe6;
+    border-radius: 15px;
+}
+
+.btn {
+    border-radius: 15px;
 }
