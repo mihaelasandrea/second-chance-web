@@ -98,8 +98,25 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/post_ad")
+@app.route("/post_ad", methods=["GET", "POST"])
 def post_ad():
+    if request.method == "POST":
+        ad = {
+            "category_name": request.form.getlist("category_name"),
+            "ad_title": request.form.get("ad_title"),
+            "ad_description": request.form.get("ad_description"),
+            "photo_url": request.form.get("photo_url"),
+            "price": request.form.get("price"),
+            "condition": request.form.get("condition"),
+            "area": request.form.get("area"),
+            "email": request.form.get("email"),
+            "telephone": request.form.get("telephone"),
+            "posted_by": session["user"]
+        }
+        mongo.db.ads.insert_one(ad)
+        flash("Ad Successfully Posted")
+        return redirect(url_for("get_ads"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("post_ad.html", categories=categories)
 

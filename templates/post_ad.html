@@ -4,19 +4,21 @@
     <h3 class="center-align">Post Ad</h3>
 
 	<div class="row card-panel waves-effect waves-block waves-light z-depth-3">
-		<form class="col s12" method="POST" action="">
+		<form class="col s12" method="POST" action="{{ url_for('post_ad') }}">
+            <!---------------------------------------------------------------------------- category -->
             <div class="row">
 				<div class="input-field col s12">
                     <i class="fas fa-folder-open prefix"></i>
 					<select id="category_name" name="category_name" class="validate" multiple required>
-                        <option value="" disabled selected>Choose Category</option>
+                        <option value="" disabled selected></option>
                         {% for category in categories %}
                         <option value="{{ category.category_name }}">{{ category.category_name }}</option>
                         {% endfor %}
 				    </select>
-					<label for="category_name">Ad category</label>
+					<label for="category_name">Category</label>
 				</div>
             </div>
+            <!------------------------------------------------------------------------------- photo -->
             <div class="row">
                 <div class="input-field col s12">
                     <i id="photo-icon" class="fas fa-image prefix"></i>
@@ -24,6 +26,7 @@
                     <label for="photo_url">Please add photo URL</label>
                 </div>
             </div>
+            <!------------------------------------------------------------------------------- title -->
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="fas fa-pencil-alt prefix"></i>
@@ -32,6 +35,7 @@
 					<label for="ad_title">Title</label>
                 </div>
 			</div>
+            <!-------------------------------------------------------------------------- description -->
 			<div class="row">
 				<div class="input-field col s12">
                     <i class="fas fa-align-left prefix"></i>
@@ -40,6 +44,7 @@
 					<label for="ad_description">Description</label>
 				</div>
 			</div>
+            <!-------------------------------------------------------------------------------- price -->
             <div class="row">
 				<div class="input-field col s12">
 					<i class="fas fa-tag prefix"></i>
@@ -47,6 +52,7 @@
 					<label for="price">Price</label>
                 </div>
 			</div>
+            <!---------------------------------------------------------------------------- condition -->
             <div class="row">
 				<div class="input-field col s12">
 					<i class="fas fa-clipboard prefix"></i>
@@ -54,6 +60,7 @@
 					<label for="condition">Condition</label>
                 </div>
 			</div>
+            <!--------------------------------------------------------------------------------- area -->
             <div class="row">
 				<div class="input-field col s12">
 					<i class="fas fa-map-marker-alt prefix"></i>
@@ -61,6 +68,7 @@
 					<label for="area">Area</label>
                 </div>
 			</div>
+            <!---------------------------------------------------------------------------- telephone -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-phone prefix"></i>
@@ -68,6 +76,7 @@
                     <label for="telephone">Telephone</label>
                 </div>
 			</div>
+            <!-------------------------------------------------------------------------------- email -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-envelope prefix"></i>
@@ -75,6 +84,14 @@
                     <label for="email">Email</label>
                 </div>
 			</div>
+            <!------------------------------------------------------------------------- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn waves-effect waves-light light-green darken-2">
+                        Post Ad<i class="fas fa-plus left"></i>
+                    </button>
+                </div>
+            </div>
 		</form>
 	</div>
 
