@@ -100,7 +100,8 @@ def logout():
 
 @app.route("/post_ad")
 def post_ad():
-    return render_template("post_ad.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("post_ad.html", categories=categories)
 
 
 if __name__ == "__main__":
