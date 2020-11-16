@@ -8,7 +8,7 @@
             <div class="card-panel z-depth-3">
                 <div class="row">
 					<div class="input-field col s12">
-						<i class="fas fa-user-cog prefix"></i>
+						<i class="far fa-user prefix"></i>
 						<input id="username" name="username" type="text" minlength="5"
                             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
 						<label for="username">Username</label>
@@ -16,18 +16,20 @@
                 </div>
 				<div class="row">
 					<div class="input-field col s12">
-                        <i class="fas fa-envelope prefix"></i>
-						<input id="email" name="email" type="email" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                        <i class=" prefix"></i>
+                        <i class="far fa-envelope prefix"></i>
+						<input id="email" name="email" type="email" class="validate" required>
 						<label for="email">Email</label>
 					</div>
                 </div>
 				<div class="row">
-					<div class="input-field col s12">
-						<textarea id="message" name="message" class="materialize-textarea"></textarea>
-						<label for="message">Message</label>
-					</div>
+				<div class="input-field col s12">
+                    <i class="far fa-comment-alt prefix"></i>
+					<textarea id="message" name="message" minlength="5"
+                        maxlength="100" class="materialize-textarea validate" required></textarea>
+					<label for="message">Message</label>
 				</div>
+			</div>
                 <div class="row center-align">
                     <button type="submit" class="btn waves-effect waves-light light-green darken-2">
                         Submit

@@ -68,9 +68,20 @@
             <!--------------------------------------------------------------------------------- area -->
             <div class="row">
 				<div class="input-field col s12">
-					<i class="fas fa-map-marker-alt prefix"></i>
-					<input id="area" name="area" type="text" class="validate" required>
-					<label for="area">Area</label>
+                    <i class="fas fa-map-marker-alt prefix"></i>
+                    <select id="area_name" name="area_name" class="validate" required>
+                        <optgroup label="Ireland">
+                            {% for area in ireland_areas %}
+                                <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                        <optgroup label="North Ireland">
+                            {% for area in n_ireland_areas %}
+                                <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                    </select>
+                    <label for="area_name">Areas</label>
                 </div>
 			</div>
             <!---------------------------------------------------------------------------- telephone -->

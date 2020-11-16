@@ -108,7 +108,7 @@ def post_ad():
             "photo_url": request.form.get("photo_url"),
             "price": request.form.get("price"),
             "condition_type": request.form.get("condition_type"),
-            "area": request.form.get("area"),
+            "area_name": request.form.get("area_name"),
             "email": request.form.get("email"),
             "telephone": request.form.get("telephone"),
             "posted_by": session["user"]
@@ -119,11 +119,14 @@ def post_ad():
 
     categories = mongo.db.categories.find().sort("category_name", 1)
     conditions = mongo.db.conditions.find().sort("condition_type", 1)
+    ireland_areas = mongo.db.ireland_areas.find().sort("area_name", 1)
+    n_ireland_areas = mongo.db.n_ireland_areas.find().sort("area_name", 1)
     return render_template("post_ad.html", categories=categories,
-                        conditions=conditions)
+                        conditions=conditions, ireland_areas=ireland_areas,
+                        n_ireland_areas=n_ireland_areas)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
 
     return render_template("contact.html")
