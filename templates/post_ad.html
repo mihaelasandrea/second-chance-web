@@ -9,7 +9,7 @@
             <div class="row">
 				<div class="input-field col s12">
                     <i class="fas fa-folder-open prefix"></i>
-					<select id="category_name" name="category_name" class="validate" multiple required>
+					<select id="category_name" name="category_name" class="validate" required>
                         <option value="" disabled selected></option>
                         {% for category in categories %}
                         <option value="{{ category.category_name }}">{{ category.category_name }}</option>
@@ -55,10 +55,15 @@
             <!---------------------------------------------------------------------------- condition -->
             <div class="row">
 				<div class="input-field col s12">
-					<i class="fas fa-clipboard prefix"></i>
-					<input id="condition" name="condition" type="text" class="validate" required>
-					<label for="condition">Condition</label>
-                </div>
+                    <i class="fas fa-clipboard prefix"></i>
+					<select id="condition_type" name="condition_type" class="validate" required>
+                        <option value="" disabled selected></option>
+                        {% for condition in conditions %}
+                            <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                        {% endfor %}
+				    </select>
+					<label for="condition_type">Condition</label>
+				</div>
 			</div>
             <!--------------------------------------------------------------------------------- area -->
             <div class="row">

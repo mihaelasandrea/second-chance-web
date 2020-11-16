@@ -102,12 +102,12 @@ def logout():
 def post_ad():
     if request.method == "POST":
         ad = {
-            "category_name": request.form.getlist("category_name"),
+            "category_name": request.form.get("category_name"),
             "ad_title": request.form.get("ad_title"),
             "ad_description": request.form.get("ad_description"),
             "photo_url": request.form.get("photo_url"),
             "price": request.form.get("price"),
-            "condition": request.form.get("condition"),
+            "condition_type": request.form.get("condition_type"),
             "area": request.form.get("area"),
             "email": request.form.get("email"),
             "telephone": request.form.get("telephone"),
@@ -118,7 +118,9 @@ def post_ad():
         return redirect(url_for("get_ads"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("post_ad.html", categories=categories)
+    conditions = mongo.db.conditions.find().sort("condition_type", 1)
+    return render_template("post_ad.html", categories=categories,
+                        conditions=conditions)
 
 
 if __name__ == "__main__":
