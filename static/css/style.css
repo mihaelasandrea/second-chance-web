@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto Slab', serif;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #fff;
     color: #697272;
 }
@@ -8,7 +8,7 @@ body {
 nav ul li a{
     color: #ababaf;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 nav a img {

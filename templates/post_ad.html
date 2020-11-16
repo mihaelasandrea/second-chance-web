@@ -3,19 +3,30 @@
 
     <h3 class="center-align">Post Ad</h3>
 
-	<div class="row">
+	<div class="row card-panel waves-effect waves-block waves-light z-depth-3">
 		<form class="col s12" method="POST" action="">
 			<div class="row">
 				<div class="input-field col s12">
-					<i class="fas fa-user-circle prefix"></i>
-					<input id="icon_prefix" type="text" class="validate">
-					<label for="icon_prefix">First Name</label>
-				</div>
+					<i class="fas fa-pencil-alt prefix"></i>
+					<input id="ad_title" name="ad_title" minlength="5" maxlength="15"
+                        type="text" class="validate" required>
+					<label for="ad_title">Ad Title</label>
+                </div>
+			</div>
+			<div class="row">
 				<div class="input-field col s12">
-					<i class="fas fa-phone prefix"></i>
-					<input id="icon_telephone" type="tel" class="validate">
-					<label for="icon_telephone">Telephone</label>
+                    <i class="fas fa-align-left prefix"></i>
+					<textarea id="ad_description" name="ad_description" minlength="5"
+                        maxlength="100" class="materialize-textarea validate" required></textarea>
+					<label for="ad_description">Ad description</label>
 				</div>
+			</div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-phone prefix"></i>
+                    <input id="icon_telephone" type="tel" class="validate" required>
+                    <label for="icon_telephone">Telephone</label>
+                </div>
 			</div>
 		</form>
 	</div>
