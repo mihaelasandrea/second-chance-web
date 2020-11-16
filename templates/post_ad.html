@@ -17,12 +17,19 @@
 					<label for="category_name">Ad category</label>
 				</div>
             </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i id="photo-icon" class="fas fa-image prefix"></i>
+                    <input id="photo_url" name="photo_url" type="text" minlength="5" pattern="https://.*"  class="validate" required/>
+                    <label for="photo_url">Please add photo URL</label>
+                </div>
+            </div>
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="fas fa-pencil-alt prefix"></i>
 					<input id="ad_title" name="ad_title" minlength="5" maxlength="15"
                         type="text" class="validate" required>
-					<label for="ad_title">Ad Title</label>
+					<label for="ad_title">Title</label>
                 </div>
 			</div>
 			<div class="row">
@@ -30,14 +37,42 @@
                     <i class="fas fa-align-left prefix"></i>
 					<textarea id="ad_description" name="ad_description" minlength="5"
                         maxlength="100" class="materialize-textarea validate" required></textarea>
-					<label for="ad_description">Ad description</label>
+					<label for="ad_description">Description</label>
 				</div>
+			</div>
+            <div class="row">
+				<div class="input-field col s12">
+					<i class="fas fa-tag prefix"></i>
+					<input id="price" name="price" type="text" class="validate" required>
+					<label for="price">Price</label>
+                </div>
+			</div>
+            <div class="row">
+				<div class="input-field col s12">
+					<i class="fas fa-clipboard prefix"></i>
+					<input id="condition" name="condition" type="text" class="validate" required>
+					<label for="condition">Condition</label>
+                </div>
+			</div>
+            <div class="row">
+				<div class="input-field col s12">
+					<i class="fas fa-map-marker-alt prefix"></i>
+					<input id="area" name="area" type="text" class="validate" required>
+					<label for="area">Area</label>
+                </div>
 			</div>
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-phone prefix"></i>
-                    <input id="icon_telephone" type="tel" class="validate" required>
-                    <label for="icon_telephone">Telephone</label>
+                    <input id="telephone" name="telephone" type="tel" class="validate" required>
+                    <label for="telephone">Telephone</label>
+                </div>
+			</div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input id="email" name="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
                 </div>
 			</div>
 		</form>
