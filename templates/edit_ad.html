@@ -83,6 +83,7 @@
 				<div class="input-field">
                     <i class="fas fa-map-marker-alt prefix"></i>
                     <select id="area_name" name="area_name" class="validate" required>
+                        <option value="" disabled></option>
                         <optgroup label="Ireland">
                             {% for area in ireland_areas %}
                                 {% if area.area_name == ad.area_name %}

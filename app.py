@@ -144,7 +144,7 @@ def edit_ad(ad_id):
         }
         mongo.db.ads.update({"_id": ObjectId(ad_id)}, submit)
         flash("Ad Successfully Updated")
-        
+
     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     conditions = mongo.db.conditions.find().sort("condition_type", 1)
@@ -154,6 +154,13 @@ def edit_ad(ad_id):
                         conditions=conditions,
                         ireland_areas=ireland_areas,
                         n_ireland_areas=n_ireland_areas)
+
+
+@app.route("/delete_ad/<ad_id>")
+def delete_ad(ad_id):
+    mongo.db.ads.remove({"_id": ObjectId(ad_id)})
+    flash("Ad Successfully Deleted")
+    return redirect(url_for("get_ads"))
 
 
 @app.route("/contact", methods=["GET", "POST"])
