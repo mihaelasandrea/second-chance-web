@@ -17,27 +17,29 @@
 
     <header>
         <!-- top navbar -->
-		<nav class="nav-extended white">
-			<div class="nav-wrapper">
-				<a href="{{ url_for('get_ads') }}" class="brand-logo">
-                    <img class="responsive-img" loading="lazy" src="{{ url_for('static', filename='assets/images/logo.jpg') }}"
-                        alt="Second Chance logo"/>
-                </a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="{{ url_for('get_ads') }}">Home</a></li>
-                    {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}">My Account</a></li>
-                        <li><a href="{{ url_for('post_ad') }}">Post Ad</a></li>
-					    <li><a href="{{ url_for('logout') }}">Log Out</a></li>
-                    {% else %}
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}">Register</a></li>
-                        {% endif %}
-                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
-				</ul>
-			</div>
-		</nav>
+        <div class="navbar-fixed">
+            <nav class="nav-extended white">
+                <div class="nav-wrapper">
+                    <a href="{{ url_for('get_ads') }}" class="brand-logo">
+                        <img class="responsive-img" loading="lazy" src="{{ url_for('static', filename='assets/images/logo.jpg') }}"
+                            alt="Second Chance logo"/>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="{{ url_for('get_ads') }}">Home</a></li>
+                        {% if session.user %}
+                            <li><a href="{{ url_for('profile', username=session['user']) }}">My Account</a></li>
+                            <li><a href="{{ url_for('post_ad') }}">Post Ad</a></li>
+                            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        {% else %}
+                            <li><a href="{{ url_for('login') }}">Log In</a></li>
+                            <li><a href="{{ url_for('register') }}">Register</a></li>
+                            {% endif %}
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 		
         <!-- mobile sidenav -->
 		<ul class="sidenav" id="mobile-demo">
