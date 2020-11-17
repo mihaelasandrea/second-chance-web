@@ -122,7 +122,8 @@ def post_ad():
     ireland_areas = mongo.db.ireland_areas.find().sort("area_name", 1)
     n_ireland_areas = mongo.db.n_ireland_areas.find().sort("area_name", 1)
     return render_template("post_ad.html", categories=categories,
-                        conditions=conditions, ireland_areas=ireland_areas,
+                        conditions=conditions,
+                        ireland_areas=ireland_areas,
                         n_ireland_areas=n_ireland_areas)
 
 
@@ -130,7 +131,13 @@ def post_ad():
 def edit_ad(ad_id):
     ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_ad.html", ad=ad, categories=categories)
+    conditions = mongo.db.conditions.find().sort("condition_type", 1)
+    ireland_areas = mongo.db.ireland_areas.find().sort("area_name", 1)
+    n_ireland_areas = mongo.db.n_ireland_areas.find().sort("area_name", 1)
+    return render_template("edit_ad.html", ad=ad, categories=categories,
+                        conditions=conditions,
+                        ireland_areas=ireland_areas,
+                        n_ireland_areas=n_ireland_areas)
 
 
 @app.route("/contact", methods=["GET", "POST"])

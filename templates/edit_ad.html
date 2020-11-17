@@ -10,9 +10,13 @@
 				<div class="input-field">
                     <i class="fas fa-folder-open prefix"></i>
 					<select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected></option>
+                        <option value="" disabled></option>
                         {% for category in categories %}
-                        <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% if category.category_name == ad.category_name %}
+                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                            {% else %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endif %}
                         {% endfor %}
 				    </select>
 					<label for="category_name">Category</label>
@@ -22,7 +26,9 @@
             <div class="row">
                 <div class="input-field">
                     <i id="photo-icon" class="fas fa-image prefix"></i>
-                    <input id="photo_url" name="photo_url" type="text" minlength="5" pattern="https://.*"  class="validate" required/>
+                    <input id="photo_url" name="photo_url" type="text" 
+                        value="{{ ad.photo_url }}" minlength="5"
+                        pattern="https://.*"  class="validate" required/>
                     <label for="photo_url">Please add photo URL</label>
                 </div>
             </div>
@@ -31,7 +37,7 @@
 				<div class="input-field">
 					<i class="fas fa-pencil-alt prefix"></i>
 					<input id="ad_title" name="ad_title" minlength="5" maxlength="15"
-                        type="text" class="validate" required>
+                        value="{{ ad.ad_title }}" type="text" class="validate" required>
 					<label for="ad_title">Title</label>
                 </div>
 			</div>
@@ -40,7 +46,9 @@
 				<div class="input-field">
                     <i class="fas fa-align-left prefix"></i>
 					<textarea id="ad_description" name="ad_description" minlength="5"
-                        maxlength="100" class="materialize-textarea validate" required></textarea>
+                        maxlength="100" class="materialize-textarea validate" required>
+                    {{- ad.ad_description -}}
+                    </textarea>
 					<label for="ad_description">Description</label>
 				</div>
 			</div>
@@ -48,7 +56,8 @@
             <div class="row">
 				<div class="input-field">
 					<i class="fas fa-tag prefix"></i>
-					<input id="price" name="price" type="text" class="validate" required>
+					<input id="price" name="price" type="text" class="validate"
+                        value="{{ ad.price }}" required>
 					<label for="price">Price</label>
                 </div>
 			</div>
@@ -57,9 +66,13 @@
 				<div class="input-field">
                     <i class="fas fa-clipboard prefix"></i>
 					<select id="condition_type" name="condition_type" class="validate" required>
-                        <option value="" disabled selected></option>
+                        <option value="" disabled></option>
                         {% for condition in conditions %}
-                            <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                            {% if condition.condition_type == ad.condition_type %}
+                                <option value="{{ condition.condition_type }}" selected>{{ condition.condition_type }}</option>
+                            {% else %}
+                                <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                            {% endif %}
                         {% endfor %}
 				    </select>
 					<label for="condition_type">Condition</label>
@@ -72,23 +85,32 @@
                     <select id="area_name" name="area_name" class="validate" required>
                         <optgroup label="Ireland">
                             {% for area in ireland_areas %}
-                                <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                                {% if area.area_name == ad.area_name %}
+                                    <option value="{{ area.area_name }}" selected>{{ area.area_name }}</option>
+                                {% else %}
+                                    <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                                {% endif %}
                             {% endfor %}
                         </optgroup>
                         <optgroup label="North Ireland">
                             {% for area in n_ireland_areas %}
-                                <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                                {% if area.area_name == ad.area_name %}
+                                    <option value="{{ area.area_name }}" selected>{{ area.area_name }}</option>
+                                {% else %}
+                                    <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                                {% endif %}
                             {% endfor %}
                         </optgroup>
                     </select>
-                    <label for="area_name">Areas</label>
+                    <label for="area_name">Area</label>
                 </div>
 			</div>
             <!---------------------------------------------------------------------------- telephone -->
             <div class="row">
                 <div class="input-field">
                     <i class="fas fa-phone prefix"></i>
-                    <input id="telephone" name="telephone" type="tel" class="validate" required>
+                    <input id="telephone" name="telephone" type="tel" class="validate"
+                        value="{{ ad.telephone }}" required>
                     <label for="telephone">Telephone</label>
                 </div>
 			</div>
@@ -96,13 +118,17 @@
             <div class="row">
                 <div class="input-field">
                     <i class="fas fa-envelope prefix"></i>
-                    <input id="email" name="email" type="email" class="validate" required>
+                    <input id="email" name="email" type="email" class="validate"
+                        value="{{ ad.email }}" required>
                     <label for="email">Email</label>
                 </div>
 			</div>
             <!------------------------------------------------------------------------- submit button -->
             <div class="row">
                 <div class="center-align">
+                    <a href="{{ url_for('get_ads') }}" class="btn waves-effect waves-light red darken-2">
+                        Cancel<i class="fas fa-times-circle left"></i>
+                    </a>
                     <button type="submit" class="btn waves-effect waves-light light-green darken-2">
                         Edit Ad<i class="fas fa-edit left"></i>
                     </button>
