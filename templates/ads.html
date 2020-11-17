@@ -5,27 +5,56 @@
 
     <div class="row">
         {% for ad in ads %}
-            <div class="card col s12 m6 l4 z-depth-3 waves-effect waves-block waves-light">
-                    <div class="card-image">
-                        <a href="{{ url_for('post_ad') }}"></a>
-                            <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo" />
-                        </a>
+			<div class="card col s12 m6 l4 z-depth-3 waves-effect waves-block waves-light">
+				<div class="card-image">
+					<a href="{{ url_for('post_ad') }}"></a>
+					<img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo" />
+			                        </a>
+				</div>
+				<div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Title: {{ ad.ad_title }}<i class="fas fa-ellipsis-v right"></i></span>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Category: {{ ad.category_name }}</p>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Price: {{ ad.price }} €</p>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Condition: {{ ad.condition_type }}</p>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Area: {{ ad.area_name }}</p>
+					</div>
+					<div class="divider"></div>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title grey-text text-darken-4"><i class="fas fa-times right"></i></span>
+					<div class="section">
+						<p>Description: {{ ad.ad_description }}</p>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Seller: {{ ad.posted_by }}</p>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Email: {{ ad.email }}</p>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<p>Telephone: {{ ad.telephone }}</p>
+					</div>
+					<div class="divider"></div>
+                    <div class="center-align">
+                        <a class="waves-effect waves-light btn-small light-green darken-2">Edit</a>
+                        <a class="waves-effect waves-light btn-small light-green darken-2">Cancel</a>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Title: {{ ad.ad_title }}<i class="fas fa-ellipsis-v right"></i></span>
-                        <p>Category: {{ ad.category_name }}</p>
-                        <p>Price: {{ ad.price }} €</p>
-                        <p>Condition: {{ ad.condition_type }}</p>
-                        <p>Area: {{ ad.area_name }}</p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="fas fa-times right"></i></span>
-                        <p>Description: {{ ad.ad_description }}</p>
-                        <p>Seller: {{ ad.posted_by }}</p>
-                        <p>Email: {{ ad.email }}</p>
-                        <p>Telephone: {{ ad.telephone }}</p>
-                    </div>
-            </div>
+				</div>
+			</div>
         {% endfor %}
     </div>
 {% endblock %}

@@ -33,8 +33,14 @@ nav i {
     background-color: #efefe6;
     border-radius: 15px;
     margin: 5px;
+    display: inline-block;
+    max-width: 300px;
 }
 
 .btn {
     border-radius: 15px;
+}
+
+.btn-small {
+    margin: 5px;
 }
