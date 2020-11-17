@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="center-align">Edit Ad</h3>
+
+	<div class="row card-panel waves-effect waves-block waves-light z-depth-3">
+		<form class="col s12" method="POST" action="{{ url_for('edit_ad', ad_id=ad._id) }}">
+            <!---------------------------------------------------------------------------- category -->
+            <div class="row">
+				<div class="input-field">
+                    <i class="fas fa-folder-open prefix"></i>
+					<select id="category_name" name="category_name" class="validate" required>
+                        <option value="" disabled selected></option>
+                        {% for category in categories %}
+                        <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+				    </select>
+					<label for="category_name">Category</label>
+				</div>
+            </div>
+            <!------------------------------------------------------------------------------- photo -->
+            <div class="row">
+                <div class="input-field">
+                    <i id="photo-icon" class="fas fa-image prefix"></i>
+                    <input id="photo_url" name="photo_url" type="text" minlength="5" pattern="https://.*"  class="validate" required/>
+                    <label for="photo_url">Please add photo URL</label>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------- title -->
+			<div class="row">
+				<div class="input-field">
+					<i class="fas fa-pencil-alt prefix"></i>
+					<input id="ad_title" name="ad_title" minlength="5" maxlength="15"
+                        type="text" class="validate" required>
+					<label for="ad_title">Title</label>
+                </div>
+			</div>
+            <!-------------------------------------------------------------------------- description -->
+			<div class="row">
+				<div class="input-field">
+                    <i class="fas fa-align-left prefix"></i>
+					<textarea id="ad_description" name="ad_description" minlength="5"
+                        maxlength="100" class="materialize-textarea validate" required></textarea>
+					<label for="ad_description">Description</label>
+				</div>
+			</div>
+            <!-------------------------------------------------------------------------------- price -->
+            <div class="row">
+				<div class="input-field">
+					<i class="fas fa-tag prefix"></i>
+					<input id="price" name="price" type="text" class="validate" required>
+					<label for="price">Price</label>
+                </div>
+			</div>
+            <!---------------------------------------------------------------------------- condition -->
+            <div class="row">
+				<div class="input-field">
+                    <i class="fas fa-clipboard prefix"></i>
+					<select id="condition_type" name="condition_type" class="validate" required>
+                        <option value="" disabled selected></option>
+                        {% for condition in conditions %}
+                            <option value="{{ condition.condition_type }}">{{ condition.condition_type }}</option>
+                        {% endfor %}
+				    </select>
+					<label for="condition_type">Condition</label>
+				</div>
+			</div>
+            <!--------------------------------------------------------------------------------- area -->
+            <div class="row">
+				<div class="input-field">
+                    <i class="fas fa-map-marker-alt prefix"></i>
+                    <select id="area_name" name="area_name" class="validate" required>
+                        <optgroup label="Ireland">
+                            {% for area in ireland_areas %}
+                                <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                        <optgroup label="North Ireland">
+                            {% for area in n_ireland_areas %}
+                                <option value="{{ area.area_name }}">{{ area.area_name }}</option>
+                            {% endfor %}
+                        </optgroup>
+                    </select>
+                    <label for="area_name">Areas</label>
+                </div>
+			</div>
+            <!---------------------------------------------------------------------------- telephone -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-phone prefix"></i>
+                    <input id="telephone" name="telephone" type="tel" class="validate" required>
+                    <label for="telephone">Telephone</label>
+                </div>
+			</div>
+            <!-------------------------------------------------------------------------------- email -->
+            <div class="row">
+                <div class="input-field">
+                    <i class="fas fa-envelope prefix"></i>
+                    <input id="email" name="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+			</div>
+            <!------------------------------------------------------------------------- submit button -->
+            <div class="row">
+                <div class="center-align">
+                    <button type="submit" class="btn waves-effect waves-light light-green darken-2">
+                        Edit Ad<i class="fas fa-edit left"></i>
+                    </button>
+                </div>
+            </div>
+		</form>
+	</div>
+
+{% endblock %}

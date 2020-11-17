@@ -126,10 +126,17 @@ def post_ad():
                         n_ireland_areas=n_ireland_areas)
 
 
+@app.route("/edit_ad/<ad_id>", methods=["GET", "POST"])
+def edit_ad(ad_id):
+    ad = mongo.db.ads.find_one({"_id": ObjectId(ad_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_ad.html", ad=ad, categories=categories)
+
+
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
-
     return render_template("contact.html")
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
