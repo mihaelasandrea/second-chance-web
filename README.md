@@ -1,42 +1,43 @@
 <h1 align="center">SECOND CHOICE WEB</h1>
 
 [View the live webpage here](https://second-chance-web.herokuapp.com/)
-<p>
-    Our generation is facing a major global concern: adapting our current lifestyle to achieve a better environment sustainability.
-</p>
-<p>
-    The scope of the website is giving good products a “second chance” (as the title suggests) in order to be reused by other people. 
-</p>
-<p>
-    The website I created is a second-hand products web-shop where users can sale things they don’t need but still in good functional condition. 
-</p>
-<p>
-    The purpose of the buyer visitors is to find good products at affordable prices which otherwise would be too expensive or temporary necessary.
-    Like people relocating for a short-term and they need some furniture or people who wouldn’t spend a lot of money on new bikes for the children
-    and they rather buy second hand until kids grow old enough to use the same size for longer time.
-</p>
-<p>
-    The purpose of the seller visitors is to be able to get some money out of the products which don’t serve their needs anymore.
-</p>
-<p>
-    My personal purpose as a developer in creating Second Chance website is learning how to design, develop and implement a back-end for a web
-    application using Python and Flask micro-framework into MongoDB database.
-</p>
-<p>
-    The creation of this website is subject solely to educational purposes.
-</p>
+--
 
-<h2 align="center"><img src=""></h2>
+Our generation is facing a major global concern: adapting our current lifestyle to achieve a better environment sustainability.
+
+
+The scope of the website is giving good products a “second chance” (as the title suggests) in order to be reused by other people. 
+
+
+The website I created is a second-hand products web-shop where users can sale things they don’t need but still in good functional condition. 
+
+
+The purpose of the buyer visitors is to find good products at affordable prices which otherwise would be too expensive or temporary necessary.
+Like people relocating for a short-term and they need some furniture or people who wouldn’t spend a lot of money on new bikes for the children
+and they rather buy second hand until kids grow old enough to use the same size for longer time.
+
+
+The purpose of the seller visitors is to be able to get some money out of the products which don’t serve their needs anymore.
+
+
+My personal purpose as a developer in creating Second Chance website is learning how to design, develop and implement a back-end for a web
+application using Python and Flask micro-framework into MongoDB database.
+
+
+The creation of this website is subject solely to educational purposes.
+
+
 
 # User Experience
 ## User Stories
 ### Buyer Users
-1. As a buyer user I want to easily find the products I'm searching for buying.
-1. As a buyer user I want to find clear information about the products like description, images, quality.
-1. As a buyer user I want to be able to find products which are available close to my location.
-1. As a buyer user I want to be able to safely get in touch with the seller user in order to complete the transaction.
+1. As a buyer user I want to easily find the products I'm looking for buying.
+1. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
+1. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
 ### Seller Users
-1. As a seller user I want to be able to register in order to post different products for advertising.
+1. As a seller user I want to be able to register.
+1. As a seller user I want to be able to login. 
+1. As a seller user I want to be able to post different products for advertising with the selling scope.
 1. As a seller user I want to be able to view, update and delete my account.
 1. As a seller user I want to be able to add photo, title, description, price, location, product's condition, my contact details to my post.
 1. As a seller user I want to be able to update and delete my posts.
@@ -92,42 +93,47 @@
 # Testing
 ## Testing User Stories from User Experience (UX) Section
 ### Testing Buyer User Stories
-1. As a buyer user I want to easily find the products I'm searching for buying.
+1. As a buyer user I want to be able to easily find the products I'm looking for buying.
 
     1. 
     2. 
     3. 
     
-2. As a buyer user I want to find clear information about the products like description, images, quality.
+2. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
 
-    1. 
-    2. 
-    3. 
-3. As a buyer user I want to be able to find products which are available close to my location.
+    1. The ads display on the card content key information about the product the image, the title, the price, the quality and location.
+    2. On the reveal card the ads display more detailed information about the product and the seller, respectively the product
+        description and seller's contact details (name, email, telephone)
+    3. The reveal card is displayed by clicking the photo or the title of the ad and closed back by clicking the close symbol "x".
+    4. 
+3. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
 
-    1. 
-    2. 
-    3. 
-4. As a buyer user I want to be able to safely get in touch with the seller user in order to complete the transaction.
-
-    1. 
-    2. 
-    3. 
+    1. There is a contact page where users are able to get in contact with the owners of the website where they can submit a
+        message or can get in contact by the conatct details.
 ### Testing Buyer User Stories
-1. As a seller user I want to be able to post different products for advertising.
+ 1. As a seller user I want to be able to register. 
 
-    1. 
-    2. 
-    3. 
+    1. The user can register by filling in the required fields: "username", "password" and "confirm password". 
+    2. If the username is already in use, the message "Username already exists" is being flashed and the user is redirected to the login page.
+1. As a seller user I want to be able to login into "My Account".
 
+    1. The user can login with the registered username and password by filling in the respective fields.
+    2. If the username and password match the messages "Welcome 'user'" and the "'username' Account" are being flashed.
+    3. If the username is not registered yet, the message "Username doesn't exist" is being flashed and the user is redirected to the register page.
+    4. If the username and password don't match the message "Incorrect User or/and Password" is being flashed and the user is redirected to the login page.
+1. As a seller user I want to be able to post different products for advertising with the selling scope.
+
+    1.
+    2.
+    3.
 1. As a seller user I want to be able to add photo, title, description, price, location, product's condition, my contact details to my post.
 
     1. 
     2. 
     3. 
-1. As a seller user I want to be able to update and delete my posts.
+1. As a seller user I want to be the only user able to update and delete my posts.
 
-    1. 
+    1. The edit and delete buttons are available on the products cards only for the users who posted them.
     2. 
     3. 
 

@@ -80,8 +80,8 @@ def login():
 
         else:
             # username doesn't exist
-            flash("Incorrect Username or/and Password")
-            return redirect(url_for("login"))
+            flash("Username doesn't exist")
+            return redirect(url_for("register"))
 
     return render_template("login.html")
 
