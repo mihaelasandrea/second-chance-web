@@ -139,6 +139,8 @@
 -   The website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   Friends and family members were asked to review the game to point out any bugs and/or user experience issues.
+## Bugs
+-   When trying to register an already registered user, the user gets the notification that user already exists but still creates another account
 # Deployment
 ## GitHub Pages
 
