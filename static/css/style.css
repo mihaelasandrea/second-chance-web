@@ -34,6 +34,8 @@ nav i {
     border-radius: 15px;
     margin: 5px;
     display: inline-block;
+    width: auto;
+    height: auto;
 }
 
 .btn {
