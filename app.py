@@ -97,6 +97,13 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+@app.route("/delete_profile/<username>")
+def delete_profile(username):
+    mongo.db.ads.remove({"username": session["user"]})
+    flash("Profile Successfully Deleted")
+    return redirect(url_for("register"))
+
+
 @app.route("/logout/")
 def logout():
     # remove user from session cookies
