@@ -90,7 +90,7 @@ def login():
 def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+        {"username": session["user"]})
     if session["user"]:
         return render_template("profile.html", username=username)
 
@@ -99,8 +99,9 @@ def profile(username):
 
 @app.route("/delete_profile/<username>")
 def delete_profile(username):
-    mongo.db.ads.remove({"username": session["user"]})
+    mongo.db.users.remove({'_id': ObjectId(username)})
     flash("Profile Successfully Deleted")
+    session.pop("user")
     return redirect(url_for("register"))
 
 

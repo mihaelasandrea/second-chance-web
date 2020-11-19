@@ -5,14 +5,14 @@
         <div class="col s12">
             <div class="card-panel z-depth-3">
                 <h4 class="center-align">
-                    {{ username }} Account
+                    {{ username.username }} Account
                 </h4>
 
             </div>
         </div>
     </div>
 	<div class="center-align">
-		{% if session.user|lower == username|lower %}
+		{% if session.user|lower == username.username|lower %}
             <a href="{{ url_for('delete_profile', username=username._id) }}"
                 class="waves-effect waves-light btn-small red darken-2">Delete profile
             </a>
