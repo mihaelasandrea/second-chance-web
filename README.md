@@ -183,12 +183,16 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 ```
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+    to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 # Credits
 
 ## Images
 
 ## Tutorials
-<p>
+## Tutor Support
+--
+Special thanks to Johann from tutor support for his patience and for helping me out with figuring out why the delete button from the profile
+template returned the 404 error message that the requested url was not found.
 ## Other 

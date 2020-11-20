@@ -102,7 +102,7 @@ def delete_profile(username):
     mongo.db.users.remove({'_id': ObjectId(username)})
     flash("Profile Successfully Deleted")
     session.pop("user")
-    return redirect(url_for("register"))
+    return redirect(url_for("login"))
 
 
 @app.route("/logout/")
