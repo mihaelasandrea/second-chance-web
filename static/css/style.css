@@ -31,12 +31,13 @@ nav i {
 }
 
 .card {
-    background-color: #e7edeb;;
+    background-color: #e7edeb;
     border-radius: 15px;
     display: inline-block;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    margin-top: 25px;
 }
 
 .btn {
@@ -46,4 +47,13 @@ nav i {
 .btn-small {
     margin: 5px;
     border-radius: 15px;
+}
+
+.page-footer {
+    background-color: #e7edeb;
+    color: #697272;
+}
+
+.footer-copyright {
+    color: #697272;
 }
