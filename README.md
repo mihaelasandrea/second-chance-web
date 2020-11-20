@@ -6,22 +6,22 @@
 Our generation is facing a major global concern: adapting our current lifestyle to achieve a better environment sustainability.
 
 
-The scope of the website is giving good products a “second chance” (as the title suggests) in order to be reused by other people. 
+The scope of the website is to give good products a “second chance” (as the title suggests) so that they can fulfill their technical lifetime
+before being discarded.
+
+The website I created is a second-hand products web-shop where users can sale different things they don’t need but still in proper functionality. 
 
 
-The website I created is a second-hand products web-shop where users can sale things they don’t need but still in good functional condition. 
-
-
-The purpose of the buyer visitors is to find good products at affordable prices which otherwise would be too expensive or temporary necessary.
+The purpose of the **buyer visitors** is to find good products at affordable prices which otherwise would be too expensive or temporary necessary.
 Like people relocating for a short-term and they need some furniture or people who wouldn’t spend a lot of money on new bikes for the children
 and they rather buy second hand until kids grow old enough to use the same size for longer time.
 
 
-The purpose of the seller visitors is to be able to get some money out of the products which don’t serve their needs anymore.
+The purpose of the **seller visitors** is to be able to get some money out of the products which don’t serve their needs anymore.
 
 
 My personal purpose as a developer in creating Second Chance website is learning how to design, develop and implement a back-end for a web
-application using Python and Flask micro-framework into MongoDB database.
+application using Python, Flask micro-framework and MongoDB database.
 
 
 The creation of this website is subject solely to educational purposes.
@@ -33,6 +33,7 @@ The creation of this website is subject solely to educational purposes.
 ### Buyer Users
 1. As a buyer user I want to easily find the products I'm looking for buying.
 1. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
+1. As a buyer user I want to be able to find contact information about the person who sells the product I'm looking for.
 1. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
 ### Seller Users
 1. As a seller user I want to be able to register.
@@ -95,23 +96,25 @@ The creation of this website is subject solely to educational purposes.
 ### Testing Buyer User Stories
 1. As a buyer user I want to be able to easily find the products I'm looking for buying.
 
-    1. 
-    2. 
-    3. 
+    1. The ads are displayed in a very obvious manner on the first page of the site.
+    2. The users can find the products they're looking for by typing in the search bar on top of the page.
+    3. The search key word is looking for results in the title, description and category of the advertising.
+
     
 2. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
 
     1. The ads display on the card content key information about the product the image, the title, the price, the quality and location.
-    2. On the reveal card the ads display more detailed information about the product and the seller, respectively the product
-        description and seller's contact details (name, email, telephone)
-    3. The reveal card is displayed by clicking the photo or the title of the ad and closed back by clicking the close symbol "x".
-    4. 
-3. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
+    2. The reveal card is displayed by clicking the photo or the title of the ad and closed back by clicking the close symbol "x".
+    3. The reveal card displays detailed information in the product description.
+3. 1. As a buyer user I want to be able to find contact information about the person who sells the product I'm looking for.
+
+    1. The reveal card displays information about the seller's contact details (name, email, telephone)
+4. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
 
     1. There is a contact page where users are able to get in contact with the owners of the website where they can submit a
-        message or can get in contact by the conatct details.
+        message or or via the contact details in the footer section.
 ### Testing Buyer User Stories
- 1. As a seller user I want to be able to register. 
+1. As a seller user I want to be able to register. 
 
     1. The user can register by filling in the required fields: "username", "password" and "confirm password". 
     2. If the username is already in use, the message "Username already exists" is being flashed and the user is redirected to the login page.
@@ -121,9 +124,18 @@ The creation of this website is subject solely to educational purposes.
     2. If the username and password match the messages "Welcome 'user'" and the "'username' Account" are being flashed.
     3. If the username is not registered yet, the message "Username doesn't exist" is being flashed and the user is redirected to the register page.
     4. If the username and password don't match the message "Incorrect User or/and Password" is being flashed and the user is redirected to the login page.
-1. As a seller user I want to be able to post different products for advertising with the selling scope.
+1. As a seller user I want to be able to post different products for advertising with the scope of selling.
 
-    1.
+    1. The seller user can post his ad after having registered by filling in the required fields: 
+        -   category
+        -   photo
+        -   title
+        -   description
+        -   price
+        -   condition
+        -   location
+        -   telephone
+        -   email
     2.
     3.
 1. As a seller user I want to be able to add photo, title, description, price, location, product's condition, my contact details to my post.
