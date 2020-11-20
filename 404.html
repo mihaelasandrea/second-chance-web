@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <article class="container">
+        <div class="center-align">
+            <h1 >404</h1>
+            <h2>Ooopsie! This is not what you're looking for.</h2>
+        </div>
+        <div class="row center-align">
+            <div class="col s12">
+                <a href="{{ url_for('get_ads') }}">Let me bring you back to shopping.</a>
+            </div>
+        </div>
+    </article>
+
+{% endblock %}
