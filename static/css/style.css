@@ -30,6 +30,7 @@ nav i {
     background-color: #e7edeb;
     border-radius: 15px;
     margin: 30px;
+    justify-content: center;
 }
 
 .card {

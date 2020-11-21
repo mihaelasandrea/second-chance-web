@@ -4,13 +4,13 @@
     <h4 class="center-align">All Ads</h4>
 
     <div class="row center-align">
-        <form action="{{ url_for('search') }}" method="post" class="col s12 center-align">
+        <form action="{{ url_for('search') }}" method="post" class="col s12  card-panel">
             <div class="row valign-wrapper">
-                <div class="input-field inline card-panel right-align col s8 m10">
+                <div class="input-field center-align col s7 m10">
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
                     <label for="query"></label>
                 </div>
-                <div class="col s4 m2 left-align">
+                <div class="col s5 m2 center-align">
                     <button type="submit" class="btn-small waves-effect waves-light light-blue">
                         <i class="fas fa-search prefix"></i>
                     </button>

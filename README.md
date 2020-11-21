@@ -153,6 +153,7 @@ The creation of this website is subject solely to educational purposes.
 ## Bugs
 -   When trying to register an already registered user, the user gets the notification that user already exists but still creates another account
 # Deployment
+
 ## GitHub Pages
 
 
