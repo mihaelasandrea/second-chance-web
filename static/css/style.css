@@ -83,9 +83,28 @@ main {
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
     .page-footer li a i {
         width: 30px;
         height: 30px;
         font-size: 20px;
+    }
+
+    .navbar-fixed .nav-extended .nav-wrapper .brand-logo {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .card-panel .row .input-field i {
+        font-size: 18px;
     }
 }
