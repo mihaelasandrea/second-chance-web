@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
-    background-color: #fff;
+    background-color: #eaeef3;
     color: #697272;
     display: flex;
     min-height: 100vh;
@@ -9,7 +9,7 @@ body {
 }
 
 nav {
-    background-color: #e7edeb;
+    background-color: #d9e4ec;
 }
 
 nav ul li a{
@@ -27,14 +27,14 @@ nav i {
 }
 
 .card-panel {
-    background-color: #e7edeb;
+    background-color: #d9e4ec;
     border-radius: 15px;
     margin: 30px;
     justify-content: center;
 }
 
 .card {
-    background-color: #e7edeb;
+    background-color: #d9e4ec;
     border-radius: 15px;
     display: inline-block;
     width: 100%;
@@ -53,10 +53,21 @@ nav i {
 }
 
 .page-footer {
-    background-color: #e7edeb;
+    background-color: #d9e4ec;
     color: #697272;
 }
 
+.row .col .card .card-content .divider {
+    background-color: #ababaf;
+}
+
+.row .col .card .card-reveal .divider {
+    background-color: #ababaf;
+}
+
+.row .col .card .card-reveal {
+    background-color: #eaeef3;
+}
 
 main {
     flex: 1 0 auto;
