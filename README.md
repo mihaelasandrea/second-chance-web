@@ -37,10 +37,9 @@ The creation of this website is subject solely to educational purposes.
 1. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
 ### Seller Users
 1. As a seller user I want to be able to register.
-1. As a seller user I want to be able to login. 
-1. As a seller user I want to be able to post different products for advertising with the selling scope.
+1. As a seller user I want to be able to login.
 1. As a seller user I want to be able to view, update and delete my account.
-1. As a seller user I want to be able to add photo, title, description, price, location, product's condition, my contact details to my post.
+1. As a seller user I want to be able to post different products for advertising with the selling scope.
 1. As a seller user I want to be able to update and delete my posts.
 ## Design
 ### Color Scheme
@@ -127,27 +126,21 @@ The creation of this website is subject solely to educational purposes.
 1. As a seller user I want to be able to post different products for advertising with the scope of selling.
 
     1. The seller user can post his ad after having registered by filling in the required fields: 
-        -   category
-        -   photo
-        -   title
-        -   description
-        -   price
-        -   condition
-        -   location
-        -   telephone
-        -   email
-    2.
-    3.
-1. As a seller user I want to be able to add photo, title, description, price, location, product's condition, my contact details to my post.
-
-    1. 
-    2. 
-    3. 
+        -   Category
+        -   Photo
+        -   Title
+        -   Description
+        -   Price
+        -   Condition
+        -   Location
+        -   Telephone
+        -   Email
 1. As a seller user I want to be the only user able to update and delete my posts.
 
-    1. The edit and delete buttons are available on the products cards only for the users who posted them.
-    2. 
-    3. 
+    1. The posted ad displays the edit and delete buttons are available only for the user who posted them.
+    2. When clicked, the edit button sends the user to a similar form used for posting the ad.
+    3. The displayed ad editing form has the original options and data filled in.
+    4. The user can change the desired fields and after clicking the edit button, the changes are saved.
 
 ## Validation
 -   [W3C Markup Validator](https://validator.w3.org/) View [results](https://easycaptures.com/fs/uploaded/1498/4114442852.png)

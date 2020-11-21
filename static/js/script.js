@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".sidenav").sidenav();
     $('select').formSelect();
+    $('#copyright').text(new Date().getFullYear());
 
     validateMaterializeSelect();
     function validateMaterializeSelect() {

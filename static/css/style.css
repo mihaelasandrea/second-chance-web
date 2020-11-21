@@ -3,6 +3,9 @@ body {
     font-size: 16px;
     background-color: #fff;
     color: #697272;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 nav ul li a{
@@ -54,6 +57,10 @@ nav i {
     color: #697272;
 }
 
-.footer-copyright {
+.page-footer .footer-copyright {
     color: #697272;
 }
+
+main {
+    flex: 1 0 auto;
+  }
