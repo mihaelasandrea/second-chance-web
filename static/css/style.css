@@ -18,13 +18,8 @@ nav ul li a{
     font-size: 16px;
 }
 
-nav a img {
-    height: auto;
-    width: auto;
-    max-height: 45px;
-    max-width: 45px;
-    line-height: 80px;
-    vertical-align: middle;
+.navbar-fixed .nav-extended .nav-wrapper .brand-logo {
+    color: #697272;
 }
 
 nav i {
