@@ -57,9 +57,6 @@ nav i {
     color: #697272;
 }
 
-.page-footer .footer-copyright {
-    color: #697272;
-}
 
 main {
     flex: 1 0 auto;
@@ -88,8 +85,8 @@ main {
 
 @media (max-width: 600px) {
     .page-footer li a i {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         font-size: 20px;
     }
 }
