@@ -8,8 +8,12 @@ body {
     flex-direction: column;
 }
 
+nav {
+    background-color: #e7edeb;
+}
+
 nav ul li a{
-    color: #ababaf;
+    color: #697272;
     font-weight: bold;
     font-size: 16px;
 }
