@@ -70,7 +70,9 @@ main {
     width: 40px;
     height: 40px;
     font-size: 25px;
-    color: #697272; 
+    color: #697272;
+    text-align: center;
+    line-height: 40px;
     border-radius: 50%;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -79,7 +81,7 @@ main {
 }
 
 .page-footer li a i:hover {
-    background-color: #42C3F7;
+    background-color: #03a9f4;
 }
 
 @media (max-width: 600px) {
@@ -94,6 +96,7 @@ main {
         width: 30px;
         height: 30px;
         font-size: 20px;
+        line-height: 30px;
     }
 
     .navbar-fixed .nav-extended .nav-wrapper .brand-logo {
