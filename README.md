@@ -197,6 +197,7 @@ For 404.html implementation, the code was copied from the [Flask Documentation s
 
 ## Tutorials
 ## Tutor Support
-Special thanks to Johann from tutor support for his patience and for helping me out with figuring out why the delete button from the profile
+Special thanks to Johann for his patience and for helping me out with figuring out why the delete button from the profile
 template returned the 404 error message that the requested url was not found.
+Special thanks to Igor Basuga for his kind support and valuable explanations helping me out when I got stuck with my workspace not being able to preview.
 ## Other 

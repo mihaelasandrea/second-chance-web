@@ -64,3 +64,32 @@ nav i {
 main {
     flex: 1 0 auto;
   }
+
+.page-footer li {
+    display: inline;
+    margin: 15px;
+}
+
+.page-footer li a i {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #697272; 
+    border-radius: 50%;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.page-footer li a i:hover {
+    background-color: #42C3F7;
+}
+
+@media (max-width: 600px) {
+    .page-footer li a i {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+}
