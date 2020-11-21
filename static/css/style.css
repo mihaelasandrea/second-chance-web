@@ -50,7 +50,6 @@ nav i {
 .btn-small {
     margin: 5px;
     border-radius: 15px;
-    color: white;
 }
 
 .page-footer {
@@ -111,5 +110,9 @@ main {
 
     .card-panel .row .input-field i {
         font-size: 18px;
+    }
+
+    .card-panel .row i {
+    font-size: 12px;
     }
 }
