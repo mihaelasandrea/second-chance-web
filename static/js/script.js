@@ -31,7 +31,22 @@ $(document).ready(function(){
         });
     }
 
+    function sendEmail(contactForm) {
+        emailjs.send("gmail", "secondchoice", {
+            "from_name": contactForm.username.value,
+            "from_email": contactForm.emailaddress.value,
+            "message": contactForm.message.value
+        })
+        .then(
+            function(response) {
+                console.log("SUCCESS", response);
+            },
+            function(error) {
+                console.log("FAILED", error);
+            });
     
+        return false
+    }   
 });
 
   

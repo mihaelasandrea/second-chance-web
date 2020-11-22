@@ -180,7 +180,11 @@ def delete_ad(ad_id):
 
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html")
+    if request.method == "POST":
+        flash("Your message has been sent")
+        return redirect(url_for("get_ads"))
+
+    return render_template('contact.html')
 
 
 @app.errorhandler(404)

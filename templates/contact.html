@@ -3,13 +3,13 @@
 
     <h4 class="center-align">Contact Us</h4>
 
-    <div class="row">
-        <form class="col s12" method="POST" action="{{ url_for('contact') }}">
+    <div class="row center-form">
+        <form class="col s12" onsubmit="return sendMail(this);" action="{{ url_for('contact') }}">
             <div class="card-panel z-depth-3">
                 <div class="row">
 					<div class="input-field col s12">
 						<i class="far fa-user prefix"></i>
-						<input id="username" name="username" type="text" minlength="5"
+						<input type="text" name="username" id="username" minlength="5"
                             maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
 						<label for="username">Username</label>
 					</div>
@@ -18,8 +18,8 @@
 					<div class="input-field col s12">
                         <i class=" prefix"></i>
                         <i class="far fa-envelope prefix"></i>
-						<input id="email" name="email" type="email" class="validate" required>
-						<label for="email">Email</label>
+						<input id="emailaddress" name="emailaddress" type="email" class="validate" required>
+						<label for="emailaddress">Email</label>
 					</div>
                 </div>
 				<div class="row">
@@ -31,7 +31,7 @@
 				</div>
 			</div>
                 <div class="row center-align">
-                    <button type="submit" class="btn waves-effect waves-light light-blue darken-2">
+                    <button type="submit" value="Send" class="btn waves-effect waves-light light-blue darken-2">
                         Submit
                     </button>
                 </div>
