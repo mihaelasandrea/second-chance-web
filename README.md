@@ -153,7 +153,23 @@ The creation of this website is subject solely to educational purposes.
 ## Bugs
 -   When trying to register an already registered user, the user gets the notification that user already exists but still creates another account
 # Deployment
-
+1. You need o create a database in MongoDB.
+1. You need to create a new Flask Application. For this you need to create a new workspace in GitPod.
+    -   install Flask by typing in the terminal "pip3 install Flask"
+1. Create app.py file by typing in the terminal the command "touch app.py"
+1. Create env.py file by typing in the terminal the "touch env.py" command where you store the environment variables.
+1. Create .gitignore file by typing in the terminal the "touch .gitignore" command.
+1. Open .gitignore file and type env.py on the first line and __pycache__/ on the second line so that the file should not be pushed to GitHub.
+1. Open env.py and set your default environment variables:
+    -   os.environ.setdefault("IP", "0.0.0.0")
+    -   os.environ.setdefault("PORT", "5000")
+    -   os.environ.setdefault("SERCRET_KEY", "your_secret_key")
+    -   os.environ.setdefault("MONGO_URI", "your_mongo_uri")
+    -   os.environ.setdefault("MONGODB_NAME", "your_mongodb_name)
+1. In the env
+1. If you don't have one, create a new account for the host sevice named Heroku and make sure that you choose Python as Primary Development Language.
+1. After confirming your account in the confirmation email received from Heroku, go ahead and login to Heroku and create new app by clicking the button "Create New App".
+1. Give the app a name and select your region.
 ## GitHub Pages
 
 

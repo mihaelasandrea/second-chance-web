@@ -1,42 +1,42 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h4 class="center-align">Contact Us</h4>
+<h4 class="center-align">Contact Us</h4>
 
-    <div class="row center-form">
-        <form class="col s12" onsubmit="return sendMail(this);" action="{{ url_for('contact') }}">
-            <div class="card-panel z-depth-3">
-                <div class="row">
-					<div class="input-field col s12">
-						<i class="far fa-user prefix"></i>
-						<input type="text" name="username" id="username" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-						<label for="username">Username</label>
-					</div>
-                </div>
-				<div class="row">
-					<div class="input-field col s12">
-                        <i class=" prefix"></i>
-                        <i class="far fa-envelope prefix"></i>
-						<input id="emailaddress" name="emailaddress" type="email" class="validate" required>
-						<label for="emailaddress">Email</label>
-					</div>
-                </div>
-				<div class="row">
+<div class="row center-form">
+	<form class="col s12" id="contact-form">
+		<div class="card-panel z-depth-3">
+			<div class="row">
 				<div class="input-field col s12">
-                    <i class="far fa-comment-alt prefix"></i>
+					<i class="far fa-user prefix"></i>
+					<input type="text" name="from_name" id="username" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+					<label for="username">Username</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class=" prefix"></i>
+					<i class="far fa-envelope prefix"></i>
+					<input id="emailaddress" name="from_email" type="email" class="validate" required>
+					<label for="emailaddress">Email</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="far fa-comment-alt prefix"></i>
 					<textarea id="message" name="message" minlength="5"
                         maxlength="100" class="materialize-textarea validate" required></textarea>
 					<label for="message">Message</label>
 				</div>
 			</div>
-                <div class="row center-align">
-                    <button type="submit" value="Send" class="btn waves-effect waves-light light-blue darken-2">
+			<div class="row center-align">
+				<button type="submit" class="btn waves-effect waves-light light-blue darken-2">
                         Submit
                     </button>
-                </div>
-            </div>
-        </form>
-    </div>
+			</div>
+		</div>
+	</form>
+</div>
 
 {% endblock %}
