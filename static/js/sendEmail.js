@@ -7,5 +7,6 @@ window.onload = function() {
         }, function(error) {
             console.log('FAILED...', error);
         });
+        this.reset();
     });
 }

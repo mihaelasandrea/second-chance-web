@@ -45,7 +45,8 @@ def register():
 
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
+            "confirm_password": request.form.get("confirm_password")
         }
         mongo.db.users.insert_one(register)
 
@@ -183,8 +184,7 @@ def contact():
     if request.method == "POST":
         flash("Your message has been sent")
         return redirect(url_for("get_ads"))
-
-    return render_template('contact.html')
+    return render_template("contact.html")
 
 
 @app.errorhandler(404)

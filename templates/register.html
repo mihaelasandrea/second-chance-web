@@ -10,24 +10,25 @@
 					<div class="input-field col s12">
 						<i class="fas fa-user-plus prefix"></i>
 						<input id="username" name="username" type="text" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required/>
 						<label for="username">Username</label>
 					</div>
                 </div>
 				<div class="row">
 					<div class="input-field col s12">
                         <i class="fas fa-user-lock prefix"></i>
-						<input id="password" name="password" type="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+						<input id="password" name="password" type="password" onkeyup="check();" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required/>
 						<label for="password">Enter Password</label>
 					</div>
                 </div>
                 <div class="row">
 					<div class="input-field col s12">
                         <i class="fas fa-user-lock prefix"></i>
-						<input id="confirmPassword" name="confirmPassword" type="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-						<label for="confirmPassword">Confirm Password</label>
+						<input id="confirm_password" name="confirm_password" type="password" onkeyup="check();" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required/>
+                            <span id="message"></span>
+						<label for="confirm_password">Confirm Password</label>
 					</div>
                 </div>
                 <div class="row center-align">
@@ -47,5 +48,8 @@
         </div>
     </div>
 
-
 {% endblock %}
+
+{% block scripts %}
+    <script src="/static/js/confirmPassword.js"></script>
+{% endblock scripts %}
