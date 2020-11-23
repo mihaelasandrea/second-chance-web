@@ -153,51 +153,117 @@ The creation of this website is subject solely to educational purposes.
 ## Bugs
 -   When trying to register an already registered user, the user gets the notification that user already exists but still creates another account
 # Deployment
-1. You need o create a database in MongoDB.
-1. You need to create a new Flask Application. For this you need to create a new workspace in GitPod.
-    -   install Flask by typing in the terminal "pip3 install Flask"
-1. Create app.py file by typing in the terminal the command "touch app.py"
-1. Create env.py file by typing in the terminal the "touch env.py" command where you store the environment variables.
-1. Create .gitignore file by typing in the terminal the "touch .gitignore" command.
-1. Open .gitignore file and type env.py on the first line and __pycache__/ on the second line so that the file should not be pushed to GitHub.
+1. First you need to create a new workspace in GitPod.
+1. Create a new Flask Application.
+1. Install Flask by typing in the terminal 
+```
+$ pip3 install Flask
+```
+1. Create app.py file by typing in the terminal the command
+```
+$ touch app.py
+```
+1. Create env.py (the file where you store the environment variables) by typing in the terminal the command:
+```
+$ touch env.py
+```
 1. Open env.py and set your default environment variables:
     -   os.environ.setdefault("IP", "0.0.0.0")
     -   os.environ.setdefault("PORT", "5000")
     -   os.environ.setdefault("SERCRET_KEY", "your_secret_key")
     -   os.environ.setdefault("MONGO_URI", "your_mongo_uri")
     -   os.environ.setdefault("MONGODB_NAME", "your_mongodb_name)
-1. In the env
-1. If you don't have one, create a new account for the host sevice named Heroku and make sure that you choose Python as Primary Development Language.
-1. After confirming your account in the confirmation email received from Heroku, go ahead and login to Heroku and create new app by clicking the button "Create New App".
-1. Give the app a name and select your region.
-## GitHub Pages
+1. Before you create your Heroku application, make sure that you have set up the Procfile and requirements.txt files. Run in the terminal the following commands:
+```
+$ pip3 freeze --local > requirements.txt
+```
 
+```
+$ echo web: python app.py > Procfile
+```
+1. If you don't have a [Heroku](https://heroku.com/) account, create a new one and make sure that you choose Python as Primary Development Language.
+1. Login to Heroku and create new app by clicking the button "New" > "Create New App".
+
+    ![Create New App](static/assets/images/readme/newapp.png)
+1. Give the app an unique name, select your region and click "Create App".
+1. Set up Automatic deployment from your GitHub repository.
+
+    ![GitHub repo](static/assets/images/readme/github.png)
+1. Make sure your github profile is displayed and add your repository name.
+
+    ![Repository name](static/assets/images/readme/reponame.png)
+1. Click Search and once it finds your repo click connect.
+
+    ![Connect](static/assets/images/readme/connect.png)
+1. Before you enable Automatic Deployment you need to set your environment variables so click on Settings tab for your app.
+
+    ![Settings](static/assets/images/readme/settings.png)
+1. Then on Reveal Config Vars.
+
+    ![Reveal Config Vars](static/assets/images/readme/rcv.png)
+1. Add your variables here and make sure you don't include any quotes for the keys.
+
+    ![Variables](static/assets/images/readme/addvar.png)
+1. You need to push the two new files to the repository. Within the terminal type:
+```
+$ git add requirements.txt
+```
+
+```
+$ git commit -m "Add requirements.txt"
+```
+
+```
+$ git add Procfile`
+```
+
+```
+$ git commit -m "Add Procfile"
+```
+
+```
+$ git push
+```
+1. Back to Heroku, you can now safely "Enable Automatic Deployment"
+
+    ![Enable Automatic Deployment](static/assets/images/readme/enable.png)
+1. Click Deploy Branch
+
+    ![Deploy Branch](static/assets/images/readme/deploy.png)
+1. You should see "Your app was successfully deployed"
+
+    ![Successfully Deployed](static/assets/images/readme/success.png)
+1. Click view to launch you new app.
 
 ## Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [Second-Choice GitHub Repository](https://github.com/mihaelasandrea/second-choice)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+    ![Fork Button](static/assets/images/readme/fork.png)
 3. You should now have a copy of the original repository in your GitHub account.
 
 ## Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [Second-Choice GitHub Repository](https://github.com/mihaelasandrea/second-choice)
 2. Under the repository name, click "Clone or download".
+
+    ![Clone Button](static/assets/images/readme/clone.png)
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/YOUR-USERNAME/second-choice
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/YOUR-USERNAME/second-choice
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
@@ -213,8 +279,15 @@ For 404.html implementation, the code was copied from the [Flask Documentation s
 ## Images
 
 ## Tutorials
+### Stackoverflow
+For the confirmation password in the register form I used the code from [Stackoverflow](https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page)
 ## Tutor Support
 Special thanks to Johann for his patience and for helping me out with figuring out why the delete button from the profile
 template returned the 404 error message that the requested url was not found.
+
 Special thanks to Igor Basuga for his kind support and valuable explanations helping me out when I got stuck with my workspace not being able to preview.
+
+Special thanks to Kevin for his kind support helping me out with connecting the contact us form to the email address and pointing
+me in the right direction for fixing the confirmation password functionality.
+
 ## Other 
