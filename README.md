@@ -153,6 +153,7 @@ The creation of this website is subject solely to educational purposes.
 ## Bugs
 -   When trying to register an already registered user, the user gets the notification that user already exists but still creates another account
 # Deployment
+1. For this project you need to create a database in [MongoDB](https://www.mongodb.com/)
 1. First you need to create a new workspace in GitPod.
 1. Create a new Flask Application.
 1. Install Flask by typing in the terminal 
@@ -235,7 +236,7 @@ $ git push
     ![Successfully Deployed](static/assets/images/readme/success.png)
 1. Click view to launch you new app.
 
-## Forking the GitHub Repository
+# Forking the GitHub Repository
 
 By forking the GitHub Repository you make a copy of the original repository on you GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
@@ -245,7 +246,7 @@ By forking the GitHub Repository you make a copy of the original repository on y
     ![Fork Button](static/assets/images/readme/fork.png)
 3. You should now have a copy of the original repository in your GitHub account.
 
-## Making a Local Clone
+# Making a Local Clone
 
 1. Log in to GitHub and locate the [Second-Choice GitHub Repository](https://github.com/mihaelasandrea/second-choice)
 2. Under the repository name, click "Clone or download".
