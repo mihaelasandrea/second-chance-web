@@ -159,9 +159,10 @@ All images used for the ads posted in the website were taken by the developer an
     4. The user can change the desired fields and after clicking the edit button, the changes are saved.
 
 ## Validation
--   [W3C Markup Validator](https://validator.w3.org/) View [results](https://easycaptures.com/fs/uploaded/1498/4114442852.png)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) View [results](https://easycaptures.com/fs/uploaded/1498/2110581351.png)
--   [JavaScript validator](https://jshint.com/) View [results](https://easycaptures.com/fs/uploaded/1498/1830005688.png)
+-   [W3C Markup Validator](https://validator.w3.org/) the results fail because the HTML validator doesn't recognize jinja.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Results pass. No errors.
+-   [JavaScript Validator](https://jshint.com/) Results pass. No errors.
+-   [Python Validator](http://pep8online.com/) Results pass. No errors.
 ## Further Testing
 -   The website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
