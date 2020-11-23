@@ -18,6 +18,10 @@ nav ul li a{
     font-size: 16px;
 }
 
+nav i {
+    color: #697272;
+}
+
 .navbar-fixed .nav-extended .nav-wrapper .brand-logo {
     color: #697272;
 }

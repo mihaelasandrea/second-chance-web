@@ -47,26 +47,23 @@ Main font-family used throughout the website is [Roboto Slab](https://fonts.goog
 ### Imagery
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
 ## Wireframes
--   Wireframes [View]()
-
-<h2 align="center"><img src=""></h2>
-
-
-
+-   Wireframes
 # Features
 1. Responsiveness on different device sizes.
+1. Mobile collapse button.
 1. Search bar where the user can find products filtered by title, category name and description.
+1. Reset button which brings the user back to the home page.
 1. Interactive cards displaying succint information of the advertised products.
 1. Registration.
 1. Password confirm field for registration.
-1. Delete account
+1. Delete account.
 1. Log in.
 1. Log out.
 1. Post advertising.
 1. Edit and Delete post.
 1. Confirmation messages following commands as registration, logging in, logging out, post ad, adit and delete post, etc.
 1. Contact form.
-
+1. 404 page implemented.
 ## Features left to implement
 1. Defensive programming
 1. Secured connection
@@ -78,33 +75,35 @@ All images used for the ads posted in the website were taken by the developer an
 -   [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
 -   [Python3](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Frameworks, Libraries & Programs Used
-1. [MongoDB](https://www.mongodb.com/)
+1. [MongoDB:](https://www.mongodb.com/)
     -   MongoDB was used for creating the database collections.
-1. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+1. [Flask:](https://flask.palletsprojects.com/en/1.1.x/)
     - Flask was used as the web application framework.
-1. [Materizalize](https://materializecss.com/)
+1. [Materizalize:](https://materializecss.com/)
     - Materialize was used to assist with the responsiveness and styling of the website, respwctively the navbar, footer, cards, card-panels, buttons.
-1. [Font Awesome](https://fontawesome.com/)
+1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used to add the social-media icons in the footer of the page.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Share Tech Mono' font into the style.css file which is used on all text throughout the game.
 1. [jQuery:](https://jquery.com/)
     - jQuery was used for the interactive features.
-1. [Randomkeygen](https://randomkeygen.com/)
+1. [Randomkeygen:](https://randomkeygen.com/)
     - Randomkeygen was used for generating Fort Knox password.
-1. [EmailJS](https://www.emailjs.com/)
+1. [EmailJS:](https://www.emailjs.com/)
     - EmailJS was used to connect the contact form to the email address.
-1. [Color Hex](https://www.color-hex.com/)
+1. [Color Hex:](https://www.color-hex.com/)
     - Color hex was used to set the color palette.
-1. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitPod:](https://www.gitpod.io/)
+    - GitPod was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
-1. [Balsamiq](https://balsamiq.com/)
+    - GitHub was used to store the projects code after being pushed from Git.
+1. [Heroku:](https://heroku.com/)
+    - Heroku was used for deploying the app.
+1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes during the design process.
 1. [PicResize:](https://picresize.com/)
-    - PicResize was used to resize the pictures used in the game.
-1. [Easycaptures](https://easycaptures.com/)
+    - PicResize was used to resize the pictures used in the README file and for the ads links.
+1. [Easycaptures:](https://easycaptures.com/)
     - EasyCaptures was used to host the images from the ads.
 # Testing
 ## Testing User Stories from User Experience (UX) Section
@@ -166,9 +165,16 @@ All images used for the ads posted in the website were taken by the developer an
 ## Further Testing
 -   The website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
--   Friends and family members were asked to review the game to point out any bugs and/or user experience issues.
-## Bugs
--   When trying to register an already registered user, the user gets the notification that user already exists but still creates another account
+-   Friends and family members were asked to review the website to point out any bugs and/or user experience issues.
+## Fixed Bugs
+-   When trying to delete the account, the user gets the notification that the account is deleted but the account remains logged in.
+    -   The problem was fixed by removing user's session cookies by adding 'session.pop("user")' and redirect user to login page.
+-   After submitting the contact form if the user tried to visit another page of the website in the console appeared the "Uncaught Type Error"
+    -   The problem was solved after removing the sendEmail.js script path from base.html and adding it to contact.html.
+-   After creating the javascript functionality for confirming the password in the registration filed, both the registration
+    and login forms wouldn't let the user fill in the password.
+    -   The issue was coming from the fact that in the app.py file, the register dictionary wasn't updated and the problem got fixed by adding
+        the confirm_password respective field to the dictionary.
 # Deployment
 1. For this project you need to create a database in [MongoDB](https://www.mongodb.com/)
 1. First you need to create a new workspace in GitPod.
@@ -293,12 +299,14 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 # Credits
-For 404.html implementation, the code was copied from the [Flask Documentation site](https://flask.palletsprojects.com/en/master/errorhandling/)
-## Images
+## **Images**
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
-## Stackoverflow
+## **Code**
+
+For 404.html implementation, the code was copied from the [Flask Documentation site](https://flask.palletsprojects.com/en/master/errorhandling/)
+
 For the confirmation password in the register form I used the code from [Stackoverflow](https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page)
-## Tutor Support
+## **Tutor Support**
 Special thanks to **Johann** for his patience and for helping me out with figuring out why the delete button from the profile
 template returned the 404 error message that the requested url was not found.
 
@@ -307,5 +315,5 @@ Special thanks to **Igor Basuga** for his kind support and valuable explanations
 Special thanks to **Kevin** for his kind support helping me out with connecting the contact us form to the email address and pointing
 me in the right direction for fixing the confirmation password functionality.
 
-## Other
+## **Other**
 Address, email address and telephone number in the footer section are fictive.
