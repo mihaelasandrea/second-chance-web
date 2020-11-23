@@ -299,14 +299,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 # Credits
-## **Images**
+## Images
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
-## **Code**
+## Code
+
+The code was written following the educational walkthrough tutorials from Code Institude.
 
 For 404.html implementation, the code was copied from the [Flask Documentation site](https://flask.palletsprojects.com/en/master/errorhandling/)
 
 For the confirmation password in the register form I used the code from [Stackoverflow](https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page)
-## **Tutor Support**
+## Tutor Support
 Special thanks to **Johann** for his patience and for helping me out with figuring out why the delete button from the profile
 template returned the 404 error message that the requested url was not found.
 
@@ -315,5 +317,14 @@ Special thanks to **Igor Basuga** for his kind support and valuable explanations
 Special thanks to **Kevin** for his kind support helping me out with connecting the contact us form to the email address and pointing
 me in the right direction for fixing the confirmation password functionality.
 
-## **Other**
+## Mentor
+Special thanks to my mentor Dick Vlaanderen for his continuous helpful feedback, support and valuable guidance with UX experience.
+
+## Slack Comunity
+For the encouragement and the wonderful source of information that represents.
+
+## My Family
+For giving me the time and space to be able to put all my energy and resources into this learning journey.
+
+## Other
 Address, email address and telephone number in the footer section are fictive.
