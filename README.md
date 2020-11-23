@@ -26,21 +26,19 @@ application using Python, Flask micro-framework and MongoDB database.
 
 The creation of this website is subject solely to educational purposes.
 
-
-
 # User Experience
 ## User Stories
-### Buyer Users
-1. As a buyer user I want to easily find the products I'm looking for buying.
-1. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
+### **Buyer Users**
+1. As a buyer user I want to be able to easily find the products I'm looking for buying.
+1. As a buyer user I want to be able to find clear information about the products like title, description, images, quality, price, location.
 1. As a buyer user I want to be able to find contact information about the person who sells the product I'm looking for.
 1. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
-### Seller Users
+### **Seller Users**
 1. As a seller user I want to be able to register.
-1. As a seller user I want to be able to login.
-1. As a seller user I want to be able to view, update and delete my account.
+1. As a seller user I want to be able to login into "My Account".
+1. As a seller user I want to be able to view and delete my account.
 1. As a seller user I want to be able to post different products for advertising with the selling scope.
-1. As a seller user I want to be able to update and delete my posts.
+1. As a seller user I want to be the only user able to update and delete my posts.
 ## Design
 ### Color Palette
 ![Color Palette](static/assets/images/palette/colorpalette.png)
@@ -56,13 +54,22 @@ All images used for the ads posted in the website were taken by the developer an
 
 
 # Features
--   It's responsive on different device sizes
--   Defensive programming
--   Secured connection
--   Side Filter with index options for area, condition, category
-    
-## Features left to implement
+1. Responsiveness on different device sizes.
+1. Search bar where the user can find products filtered by title, category name and description.
+1. Interactive cards displaying succint information of the advertised products.
+1. Registration.
+1. Delete account
+1. Log in.
+1. Log out.
+1. Post advertising.
+1. Edit and Delete post.
+1. Confirmation messages following commands as registration, logging in, logging out, post ad, adit and delete post, etc.
+1. Contact form.
 
+## Features left to implement
+1. Defensive programming
+1. Secured connection
+1. Side Filter with index options for area, condition, category
 # Technologies Used
 ### Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -70,8 +77,8 @@ All images used for the ads posted in the website were taken by the developer an
 -   [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
 -   [Python3](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Frameworks, Libraries & Programs Used
-1. [Bootstrap 4.5.0:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap was used to assist with the responsiveness and styling of the game.
+1. [Materizalize](https://materializecss.com/)
+    - Materialize was used to assist with the responsiveness and styling of the website, respwctively the navbar, footer, cards, card-panels, buttons.
 1. [Font Awesome](https://fontawesome.com/)
     - Font Awesome was used to add the social-media icons in the footer of the page.
 1. [Google Fonts:](https://fonts.google.com/)
@@ -80,48 +87,53 @@ All images used for the ads posted in the website were taken by the developer an
     - jQuery was used for the interactive features.
 1. [Randomkeygen](https://randomkeygen.com/)
     - Randomkeygen was used for generating Fort Knox password.
+1. [Color Hex](https://www.color-hex.com/)
+    - Color hex was used to set the color palette.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Figma:](https://www.figma.com/)
-    - Figma was used to create the [wireframes](https://www.figma.com/file/sxreNPL15miV7jLFIaidk5/memory-game?node-id=0%3A1) during the design process.
+1. [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
 1. [PicResize:](https://picresize.com/)
     - PicResize was used to resize the pictures used in the game.
 1. [Easycaptures](https://easycaptures.com/)
-    - EasyCaptures was used to host the mockup, the sample card images, the html, css and javascript validation results in the README file.
+    - EasyCaptures was used to host the images from the ads.
 # Testing
 ## Testing User Stories from User Experience (UX) Section
-### Testing Buyer User Stories
-1. As a buyer user I want to be able to easily find the products I'm looking for buying.
+### **Testing Buyer User Stories**
+1. **As a buyer user I want to be able to easily find the products I'm looking for buying.**
 
     1. The ads are displayed in a very obvious manner on the first page of the site.
     2. The users can find the products they're looking for by typing in the search bar on top of the page.
     3. The search key word is looking for results in the title, description and category of the advertising.
-2. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
+1. **As a buyer user I want to be able to find clear information about the products like title, description, images, quality, price, location.**
 
     1. The ads display on the card content key information about the product the image, the title, the price, the quality and location.
     2. The reveal card is displayed by clicking the photo or the title of the ad and closed back by clicking the close symbol "x".
     3. The reveal card displays detailed information in the product description.
-3. 1. As a buyer user I want to be able to find contact information about the person who sells the product I'm looking for.
+1. **As a buyer user I want to be able to find contact information about the person who sells the product I'm looking for.**
 
     1. The reveal card displays information about the seller's contact details (name, email, telephone)
-4. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
+1. **As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.**
 
     1. There is a contact page where users are able to get in contact with the owners of the website where they can submit a
         message or via the contact details in the footer section.
-### Testing Seller User Stories
-1. As a seller user I want to be able to register. 
+### **Testing Seller User Stories**
+1. **As a seller user I want to be able to register.**
 
     1. The user can register by filling in the required fields: "username", "password" and "confirm password". 
     2. If the username is already in use, the message "Username already exists" is being flashed and the user is redirected to the login page.
-1. As a seller user I want to be able to login into "My Account".
+1. **As a seller user I want to be able to login into "My Account".**
 
     1. The user can login with the registered username and password by filling in the respective fields.
     2. If the username and password match the messages "Welcome 'user'" and the "'username' Account" are being flashed.
     3. If the username is not registered yet, the message "Username doesn't exist" is being flashed and the user is redirected to the register page.
     4. If the username and password don't match the message "Incorrect User or/and Password" is being flashed and the user is redirected to the login page.
-1. As a seller user I want to be able to post different products for advertising with the scope of selling.
+1. **As a seller user I want to be able to view and delete my account.**
+
+    1. The user can delete the registered account by clicking Delete Account.
+1. **As a seller user I want to be able to post different products for advertising with the selling scope.**
 
     1. The seller user can post his ad after having registered by filling in the required fields: 
         -   Category
@@ -133,7 +145,7 @@ All images used for the ads posted in the website were taken by the developer an
         -   Location
         -   Telephone
         -   Email
-1. As a seller user I want to be the only user able to update and delete my posts.
+1. **As a seller user I want to be the only user able to update and delete my posts.**
 
     1. The posted ad displays the edit and delete buttons are available only for the user who posted them.
     2. When clicked, the edit button sends the user to a similar form used for posting the ad.
@@ -276,17 +288,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 # Credits
 For 404.html implementation, the code was copied from the [Flask Documentation site](https://flask.palletsprojects.com/en/master/errorhandling/)
 ## Images
-
-## Tutorials
-### Stackoverflow
+All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
+## Stackoverflow
 For the confirmation password in the register form I used the code from [Stackoverflow](https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page)
 ## Tutor Support
-Special thanks to Johann for his patience and for helping me out with figuring out why the delete button from the profile
+Special thanks to **Johann** for his patience and for helping me out with figuring out why the delete button from the profile
 template returned the 404 error message that the requested url was not found.
 
-Special thanks to Igor Basuga for his kind support and valuable explanations helping me out when I got stuck with my workspace not being able to preview.
+Special thanks to **Igor Basuga** for his kind support and valuable explanations helping me out when I got stuck with my workspace not being able to preview.
 
-Special thanks to Kevin for his kind support helping me out with connecting the contact us form to the email address and pointing
+Special thanks to **Kevin** for his kind support helping me out with connecting the contact us form to the email address and pointing
 me in the right direction for fixing the confirmation password functionality.
 
 ## Other
