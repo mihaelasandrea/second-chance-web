@@ -58,6 +58,7 @@ All images used for the ads posted in the website were taken by the developer an
 1. Search bar where the user can find products filtered by title, category name and description.
 1. Interactive cards displaying succint information of the advertised products.
 1. Registration.
+1. Password confirm field for registration.
 1. Delete account
 1. Log in.
 1. Log out.
@@ -77,6 +78,10 @@ All images used for the ads posted in the website were taken by the developer an
 -   [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
 -   [Python3](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Frameworks, Libraries & Programs Used
+1. [MongoDB](https://www.mongodb.com/)
+    -   MongoDB was used for creating the database collections.
+1. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+    - Flask was used as the web application framework.
 1. [Materizalize](https://materializecss.com/)
     - Materialize was used to assist with the responsiveness and styling of the website, respwctively the navbar, footer, cards, card-panels, buttons.
 1. [Font Awesome](https://fontawesome.com/)
@@ -87,6 +92,8 @@ All images used for the ads posted in the website were taken by the developer an
     - jQuery was used for the interactive features.
 1. [Randomkeygen](https://randomkeygen.com/)
     - Randomkeygen was used for generating Fort Knox password.
+1. [EmailJS](https://www.emailjs.com/)
+    - EmailJS was used to connect the contact form to the email address.
 1. [Color Hex](https://www.color-hex.com/)
     - Color hex was used to set the color palette.
 1. [Git](https://git-scm.com/)
