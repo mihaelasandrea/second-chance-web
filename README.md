@@ -42,14 +42,12 @@ The creation of this website is subject solely to educational purposes.
 1. As a seller user I want to be able to post different products for advertising with the selling scope.
 1. As a seller user I want to be able to update and delete my posts.
 ## Design
-### Color Scheme
-
+### Color Palette
+![Color Palette](static/assets/images/palette/colorpalette.png)
 ### Typography
-
+Main font-family used throughout the website is [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=rob&sidebar.open=true&selection.family=Roboto+Slab) with Sans serif as fall back.
 ### Imagery
-
-
-
+All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
 ## Wireframes
 -   Wireframes [View]()
 
@@ -70,7 +68,7 @@ The creation of this website is subject solely to educational purposes.
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
--   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+-   [Python3](https://en.wikipedia.org/wiki/Python_(programming_language))
 ### Frameworks, Libraries & Programs Used
 1. [Bootstrap 4.5.0:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the game.
@@ -80,6 +78,8 @@ The creation of this website is subject solely to educational purposes.
     - Google fonts were used to import the 'Share Tech Mono' font into the style.css file which is used on all text throughout the game.
 1. [jQuery:](https://jquery.com/)
     - jQuery was used for the interactive features.
+1. [Randomkeygen](https://randomkeygen.com/)
+    - Randomkeygen was used for generating Fort Knox password.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
@@ -98,8 +98,6 @@ The creation of this website is subject solely to educational purposes.
     1. The ads are displayed in a very obvious manner on the first page of the site.
     2. The users can find the products they're looking for by typing in the search bar on top of the page.
     3. The search key word is looking for results in the title, description and category of the advertising.
-
-    
 2. As a buyer user I want to find clear information about the products like title, description, images, quality, price, location.
 
     1. The ads display on the card content key information about the product the image, the title, the price, the quality and location.
@@ -111,8 +109,8 @@ The creation of this website is subject solely to educational purposes.
 4. As a buyer user I want to be able to contact somebody if I'm not satisfied with my purchase.
 
     1. There is a contact page where users are able to get in contact with the owners of the website where they can submit a
-        message or or via the contact details in the footer section.
-### Testing Buyer User Stories
+        message or via the contact details in the footer section.
+### Testing Seller User Stories
 1. As a seller user I want to be able to register. 
 
     1. The user can register by filling in the required fields: "username", "password" and "confirm password". 
@@ -291,4 +289,5 @@ Special thanks to Igor Basuga for his kind support and valuable explanations hel
 Special thanks to Kevin for his kind support helping me out with connecting the contact us form to the email address and pointing
 me in the right direction for fixing the confirmation password functionality.
 
-## Other 
+## Other
+Address, email address and telephone number in the footer section are fictive.
