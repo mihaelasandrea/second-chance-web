@@ -46,14 +46,15 @@ def register():
         register = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password")),
-            "confirm_password": request.form.get("confirm_password")
+            "confirm_password": generate_password_hash(
+                request.form.get("confirm_password"))
         }
         mongo.db.users.insert_one(register)
 
         # put the new user into 'session'cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for("profile", username=session["user"]))
+        return redirect(url_for('profile', username=session["user"]))
 
     return render_template("register.html")
 
@@ -90,8 +91,7 @@ def login():
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})
+    username = mongo.db.users.find_one({"username": session["user"]})
     if session["user"]:
         return render_template("profile.html", username=username)
 
@@ -103,7 +103,7 @@ def delete_profile(username):
     mongo.db.users.remove({'_id': ObjectId(username)})
     flash("Profile Successfully Deleted")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("register"))
 
 
 @app.route("/logout/")

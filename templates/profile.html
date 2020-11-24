@@ -7,14 +7,13 @@
                 <h4 class="center-align">
                     {{ username.username }} Account
                 </h4>
-
             </div>
         </div>
     </div>
 	<div class="center-align">
 		{% if session.user|lower == username.username|lower %}
             <a href="{{ url_for('delete_profile', username=username._id) }}"
-                class="waves-effect waves-light btn-small red darken-2">Delete Account
+               aria-label="Delete Account" class="waves-effect waves-light btn-small red darken-2">Delete Account
             </a>
 		{% endif %}
 	</div>
