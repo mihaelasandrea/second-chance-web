@@ -1,4 +1,4 @@
-<h1 align="center">SECOND CHOICE WEB</h1>
+<h1 align="center">SECOND CHANCE WEB</h1>
 
 [View the live webpage here](https://second-chance-web.herokuapp.com/)
 --
@@ -48,6 +48,8 @@ Main font-family used throughout the website is [Roboto Slab](https://fonts.goog
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
 ## Wireframes
 -   Wireframes
+## Collections in MongoDB
+-   The database for Second Chance Web contains 6 collections: ads, categories, conditions, ireland_areas, n_ireland_areas (which stands for North Ireland areas) and users.
 # Features
 1. Responsiveness on different device sizes.
 1. Mobile collapse button.
@@ -81,7 +83,7 @@ All images used for the ads posted in the website were taken by the developer an
 1. [Flask:](https://flask.palletsprojects.com/en/1.1.x/)
     - Flask was used as the web application framework.
 1. [Materizalize:](https://materializecss.com/)
-    - Materialize was used to assist with the responsiveness and styling of the website, respwctively the navbar, footer, cards, card-panels, buttons.
+    - Materialize was used to assist with the responsiveness and styling of the website, respectively the navbar, footer, cards, card-panels, buttons.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used to add the social-media icons in the footer of the page and the various icons from the different sections of login, register, contact, post ad forms.
 1. [Google Fonts:](https://fonts.google.com/)
@@ -333,13 +335,12 @@ Special thanks to **Kevin** for his kind support helping me out with connecting 
 me in the right direction for fixing the confirmation password functionality.
 
 ## Mentor
-Special thanks to my mentor Dick Vlaanderen for his continuous helpful feedback, support and valuable guidance with UX experience.
+Special thanks to my mentor Dick Vlaanderen for his helpful feedback, support and valuable guidance with UX experience.
+And a huge thank you for helping me out fixing the dialog modal issue for deleting the ads. It was brilliant to see all the steps he followed
+looking for hints to solve the problem. Happy to have learned so much from him in such a short time.
 
 ## Slack Comunity
 For the encouragement and the wonderful source of information that represents.
 
 ## My Family
 For giving me the time and space to be able to put all my energy and resources into this learning journey.
-
-## Other
-Address, email address and telephone number in the footer section are fictive.
