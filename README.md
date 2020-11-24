@@ -3,6 +3,7 @@
 [View the live webpage here](https://second-chance-web.herokuapp.com/)
 --
 
+
 Our generation is facing a major global concern: adapting our current lifestyle to achieve a better environment sustainability.
 
 
@@ -26,6 +27,8 @@ application using Python, Flask micro-framework and MongoDB database.
 
 The creation of this website is subject solely to educational purposes.
 
+![Mock-up](static/assets/images/readme/mock-up.png)
+
 # User Experience
 ## User Stories
 ### **Buyer Users**
@@ -47,7 +50,12 @@ Main font-family used throughout the website is [Roboto Slab](https://fonts.goog
 ### Imagery
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
 ## Wireframes
--   Wireframes
+-   ![home](static/assets/images/wireframes/home.png)
+-   ![register](static/assets/images/wireframes/register.png)
+-   ![login](static/assets/images/wireframes/login.png)
+-   ![post](static/assets/images/wireframes/post.png)
+-   ![contact](static/assets/images/wireframes/contact.png)
+-   ![mobile](static/assets/images/wireframes/mobile.png)
 ## Collections in MongoDB
 -   The database for Second Chance Web contains 6 collections: ads, categories, conditions, ireland_areas, n_ireland_areas (which stands for North Ireland areas) and users.
 # Features
@@ -96,8 +104,8 @@ All images used for the ads posted in the website were taken by the developer an
     - EmailJS was used to connect the contact form to the email address.
 1. [Color Hex:](https://www.color-hex.com/)
     - Color hex was used to set the color palette.
-1. [GitPod:](https://www.gitpod.io/)
-    - GitPod was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub was used to store the projects code after being pushed from Git.
 1. [Heroku:](https://heroku.com/)
@@ -110,6 +118,8 @@ All images used for the ads posted in the website were taken by the developer an
     - EasyCaptures was used to host the images from the ads.
 1. [Flaticon](https://www.flaticon.com/authors/freepik)
     - Flaticon was used to import the icon for the website favicon.
+1. [Techsini](https://techsini.com/)
+    - Techsini was used to capture teh mock-ups.
 # Testing
 ## Testing User Stories from User Experience (UX) Section
 ### **Testing Buyer User Stories**
