@@ -105,8 +105,11 @@
             <!------------------------------------------------------------------------- submit button -->
             <div class="row">
                 <div class="center-align">
-                    <button type="submit" class="btn waves-effect waves-light light-blue darken-2">
-                        Post Ad<i class="fas fa-plus left"></i>
+                    <a href="{{ url_for('get_ads') }}" class="btn-small waves-effect waves-light red darken-2">
+                        Cancel
+                    </a>
+                    <button type="submit" class="btn-small waves-effect waves-light light-blue darken-2">
+                        Post Ad
                     </button>
                 </div>
             </div>

@@ -8,6 +8,11 @@ body {
     flex-direction: column;
 }
 
+main {
+    flex: 1 0 auto;
+  }
+
+/*------------------------------------------------------------------------------navbar*/
 nav {
     background-color: #d9e4ec;
 }
@@ -26,6 +31,7 @@ nav i {
     color: #697272;
 }
 
+/*---------------------------------------------------------------------------card-panels*/
 .card-panel {
     background-color: #d9e4ec;
     border-radius: 15px;
@@ -33,6 +39,7 @@ nav i {
     justify-content: center;
 }
 
+/*---------------------------------------------------------------------------------cards*/
 .card {
     background-color: #d9e4ec;
     border-radius: 15px;
@@ -43,6 +50,8 @@ nav i {
     margin-top: 25px;
 }
 
+
+/*---------------------------------------------------------------------------------buttons*/
 .btn {
     border-radius: 15px;
 }
@@ -52,26 +61,11 @@ nav i {
     border-radius: 15px;
 }
 
+/*-----------------------------------------------------------------------------------footer*/
 .page-footer {
     background-color: #d9e4ec;
     color: #697272;
 }
-
-.row .col .card .card-content .divider {
-    background-color: #ababaf;
-}
-
-.row .col .card .card-reveal .divider {
-    background-color: #ababaf;
-}
-
-.row .col .card .card-reveal {
-    background-color: #eaeef3;
-}
-
-main {
-    flex: 1 0 auto;
-  }
 
 .page-footer li {
     display: inline;
@@ -96,6 +90,21 @@ main {
     background-color: #03a9f4;
 }
 
+/*----------------------------------------------------------------------------------dividers*/
+.row .col .card .card-content .divider {
+    background-color: #ababaf;
+}
+
+.row .col .card .card-reveal .divider {
+    background-color: #ababaf;
+}
+
+/*---------------------------------------------------------------------------------card-reveal*/
+.row .col .card .card-reveal {
+    background-color: #eaeef3;
+}
+
+/*--------------------------------------------------------------------------------media-queries*/
 @media (max-width: 600px) {
     body {
         font-size: 14px;
@@ -112,7 +121,7 @@ main {
     }
 
     .navbar-fixed .nav-extended .nav-wrapper .brand-logo {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     nav ul li a {

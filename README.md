@@ -53,16 +53,17 @@ All images used for the ads posted in the website were taken by the developer an
 1. Mobile collapse button.
 1. Search bar where the user can find products filtered by title, category name and description.
 1. Reset button which brings the user back to the home page.
-1. Interactive cards displaying succint information of the advertised products.
-1. Registration.
-1. Password confirm field for registration.
-1. Delete account.
-1. Log in.
+1. Interactive cards displaying succint information of the advertised products both on card content and card reveal.
+    Card reveal gets triggered when clicked on the photo or on the title of the card content.
+1. Registration form fields: Username, Password and Password confirmation.
+1. Delete account option.
+1. Log in form fields: Username and Password.
 1. Log out.
-1. Post advertising.
-1. Edit and Delete post.
-1. Confirmation messages following commands as registration, logging in, logging out, post ad, adit and delete post, etc.
-1. Contact form.
+1. Post advertising form fields: Category, Url for photos, Title, Description, Price,
+    Condition, Area, Telephone, Email. Option buttons for edit and cancel which brings the user to the homepage.
+1. Options for Edit and Delete the post available only for the user who posted.
+1. Confirmation messages following commands as registration, logging in, logging out, post ad, edit and delete post, etc.
+1. Contact form with 3 fields for filing in: username, email and message.
 1. 404 page implemented.
 ## Features left to implement
 1. Defensive programming

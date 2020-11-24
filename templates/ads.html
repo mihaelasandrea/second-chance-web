@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h4 class="center-align">All Ads</h4>
-
     <div class="row center-align">
         <form action="{{ url_for('search') }}" method="post" class="col s12  card-panel">
             <div class="row valign-wrapper">
@@ -26,9 +24,7 @@
             <div class="col s12 m6 l3">
                 <div class="card z-depth-3 waves-effect waves-block waves-light">
                     <div class="card-image activator">
-                        <a href="{{ url_for('post_ad') }}">
-                            <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo" />
-                        </a>
+                        <img class="responsive-img" src="{{ ad.photo_url }}" alt="Item Photo" />
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">{{ ad.ad_title }}<i class="fas fa-ellipsis-v right"></i></span>
