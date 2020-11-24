@@ -41,7 +41,7 @@ The creation of this website is subject solely to educational purposes.
 1. As a seller user I want to be the only user able to update and delete my posts.
 ## Design
 ### Color Palette
-![Color Palette](static/assets/images/palette/colorpalette.png)
+![Color Palette](static/assets/images/readme/colorpalette.png)
 ### Typography
 Main font-family used throughout the website is [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=rob&sidebar.open=true&selection.family=Roboto+Slab) with Sans serif as fall back.
 ### Imagery
@@ -65,10 +65,9 @@ All images used for the ads posted in the website were taken by the developer an
 1. Confirmation messages following commands as registration, logging in, logging out, post ad, edit and delete post, etc.
 1. Contact form with 3 fields for filing in: username, email and message.
 1. 404 page implemented.
+1. Defensive programming. 
 ## Features left to implement
-1. Defensive programming
-1. Secured connection
-1. Side Filter with index options for area, condition, category
+1. Side Filter with index options for area, condition, category.
 # Technologies Used
 ### Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -304,6 +303,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 # Credits
 ## Images
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
+
+Favicon image is taken from [Flaticon](https://www.flaticon.com/authors/freepik)
 ## Code
 
 The code was written following the educational walkthrough tutorials from Code Institude.

@@ -67,8 +67,29 @@
                         <div class="center-align">
                             {% if session.user|lower == ad.posted_by|lower %}
                                 <a href="{{ url_for('edit_ad', ad_id=ad._id) }}" aria-label="Edit" class="waves-effect waves-light btn-small light-blue darken-2">Edit</a>
-                                <a href="{{ url_for('delete_ad', ad_id=ad._id) }}" aria-label="Delete" class="waves-effect waves-light btn-small red darken-2">Delete</a>
+                                <button onclick="document.getElementById('id01').style.display='block'" aria-label="Delete" class="waves-effect waves-light btn-small red darken-2">
+                                    Delete
+                                </button>
                             {% endif %}
+                        </div>
+                                            
+                        <div id="id01" class="modal">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <form class="modal-content" action="/action_page.php">
+                                <div class="container center-align">
+                                    <p>Are you sure you want to delete your post?</p>
+                        
+                                    <div class="clearfix">
+                                        <a href="{{ url_for('get_ads') }}" aria-label="No" class="btn-small waves-effect waves-light red darken-2">
+                                            No
+                                        </a>
+                                        <a href="{{ url_for('delete_ad', ad_id=ad._id) }}"
+                                            aria-label="Yes" class="waves-effect waves-light btn-small light-blue darken-2">
+                                            Yes
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -80,3 +101,6 @@
     {% endif %}
 
 {% endblock %}
+{% block scripts %}
+    <script src="/static/js/modal.js"></script>
+{% endblock scripts %}
