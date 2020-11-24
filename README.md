@@ -310,6 +310,8 @@ The code was written following the educational walkthrough tutorials from Code I
 
 For 404.html implementation, the code was copied from the [Flask Documentation site](https://flask.palletsprojects.com/en/master/errorhandling/)
 
+For delete modal from profile delete button the code was taken from [w3schools.com](https://www.w3schools.com/howto/howto_css_delete_modal.asp)
+
 For the confirmation password in the register form I used the code from [Stackoverflow](https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page)
 ## Tutor Support
 Special thanks to **Johann** for his patience and for helping me figuring out why the delete button from the profile
