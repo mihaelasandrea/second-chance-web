@@ -312,7 +312,7 @@ For 404.html implementation, the code was copied from the [Flask Documentation s
 
 For the confirmation password in the register form I used the code from [Stackoverflow](https://stackoverflow.com/questions/21727317/how-to-check-confirm-password-field-in-form-without-reloading-page)
 ## Tutor Support
-Special thanks to **Johann** for his patience and for helping me out with figuring out why the delete button from the profile
+Special thanks to **Johann** for his patience and for helping me figuring out why the delete button from the profile
 template returned the 404 error message that the requested url was not found.
 
 Special thanks to **Igor Basuga** for his kind support and valuable explanations helping me out when I got stuck with my workspace not being able to preview.

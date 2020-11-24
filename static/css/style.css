@@ -133,6 +133,10 @@ nav i {
     }
 
     .card-panel .row i {
-    font-size: 12px;
+        font-size: 12px;
+    }
+
+    .card-panel .row .input-field label {
+        font-size: 12px;
     }
 }
