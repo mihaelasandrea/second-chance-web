@@ -180,7 +180,7 @@ All images used for the ads posted in the website were taken by the developer an
     1. The user can delete the registered account by clicking Delete Account.
 1. **As a seller user I want to be able to post different products for advertising with the selling scope.**
 
-    1. The seller user can post his ad after having registered by filling in the required fields: 
+    1. The seller user can post ads after having registered by filling in the required fields: 
         -   Category
         -   Photo
         -   Title
@@ -230,21 +230,23 @@ All images used for the ads posted in the website were taken by the developer an
 ```
 $ pip3 install Flask
 ```
-1. Create app.py file by typing in the terminal the command
+5. Create app.py file by typing in the terminal the command
 ```
 $ touch app.py
 ```
-1. Create env.py (the file where you store the environment variables) by typing in the terminal the command:
+6. Create env.py (the file where you store the environment variables) by typing in the terminal the command:
 ```
 $ touch env.py
 ```
-1. Open env.py and set your default environment variables:
-    -   os.environ.setdefault("IP", "0.0.0.0")
-    -   os.environ.setdefault("PORT", "5000")
-    -   os.environ.setdefault("SERCRET_KEY", "your_secret_key")
-    -   os.environ.setdefault("MONGO_URI", "your_mongo_uri")
-    -   os.environ.setdefault("MONGODB_NAME", "your_mongodb_name)
-1. Before you create your Heroku application, make sure that you have set up the Procfile and requirements.txt files. Run in the terminal the following commands:
+7. Open env.py and set your default environment variables:
+```
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SERCRET_KEY", "your_secret_key")
+os.environ.setdefault("MONGO_URI", "your_mongo_uri")
+os.environ.setdefault("MONGODB_NAME", "your_mongodb_name)
+```
+8. Before you create your Heroku application, make sure that you have set up the Procfile and requirements.txt files. Run in the terminal the following commands:
 ```
 $ pip3 freeze --local > requirements.txt
 ```
@@ -252,7 +254,7 @@ $ pip3 freeze --local > requirements.txt
 ```
 $ echo web: python app.py > Procfile
 ```
-1. If you don't have a [Heroku](https://heroku.com/) account, create a new one and make sure that you choose Python as Primary Development Language.
+9. If you don't have a [Heroku](https://heroku.com/) account, create a new one and make sure that you choose Python as Primary Development Language.
 1. Login to Heroku and create new app by clicking the button "New" > "Create New App".
 
     ![Create New App](static/assets/images/readme/newapp.png)
@@ -295,7 +297,7 @@ $ git commit -m "Add Procfile"
 ```
 $ git push
 ```
-1. Back to Heroku, you can now safely "Enable Automatic Deployment"
+19. Back to Heroku, you can now safely "Enable Automatic Deployment"
 
     ![Enable Automatic Deployment](static/assets/images/readme/enable.png)
 1. Click Deploy Branch
