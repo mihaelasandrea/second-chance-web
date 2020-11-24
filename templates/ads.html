@@ -67,7 +67,6 @@
                         <div class="center-align">
                             {% if session.user|lower == ad.posted_by|lower %}
                                 <a href="{{ url_for('edit_ad', ad_id=ad._id) }}" aria-label="Edit" class="waves-effect waves-light btn-small light-blue darken-2">Edit</a>
-
                                 <button onclick="document.getElementById('id{{ loop.index }}').style.display='block'" aria-label="Delete" class="waves-effect waves-light btn-small light-blue darken-2">
                                     Delete
                                 </button>

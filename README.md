@@ -65,7 +65,8 @@ All images used for the ads posted in the website were taken by the developer an
 1. Confirmation messages following commands as registration, logging in, logging out, post ad, edit and delete post, etc.
 1. Contact form with 3 fields for filing in: username, email and message.
 1. 404 page implemented.
-1. Defensive programming. 
+1. Defensive programming. The Delete Account button in the profile page triggers a dialog modal which gives the user the
+    possibility to choose from deleting the account or not. Same works for Delete button for the ads users can post.
 ## Features left to implement
 1. Side Filter with index options for area, condition, category.
 # Technologies Used
@@ -179,6 +180,12 @@ All images used for the ads posted in the website were taken by the developer an
     and login forms wouldn't let the user fill in the password.
     -   The issue was coming from the fact that in the app.py file, the register dictionary wasn't updated and the problem got fixed by adding
         the confirm_password respective field to the dictionary.
+-   When connecting the html code for the delete dialog modal from the ads page to the javascript script path, the Delete button which triggers the
+    modal wouldn't work at all. 
+    -   With the amazing input of my mentor, we got to figure out and fix the bug.
+    -   Because the console didn't throw any error, we checked the html code through the html validator and so we got to see that the issue
+        laid in the fact that the modal id was repeating itself for every ad posted in the website.
+    -   The problem was solved by adding to all three sections triggering the id a jinja index loop.
 # Deployment
 1. For this project you need to create a database in [MongoDB](https://www.mongodb.com/)
 1. First you need to create a new workspace in GitPod.
