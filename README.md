@@ -172,6 +172,7 @@ All images used for the ads posted in the website were taken by the developer an
 -   When trying to delete the account, the user gets the notification that the account is deleted but the account remains logged in.
     -   The problem was fixed by removing user's session cookies by adding 'session.pop("user")' and redirect user to login page.
 -   After submitting the contact form if the user tried to visit another page of the website in the console appeared the "Uncaught Type Error"
+    -   ![Error printscreen](static/assets/images/readme/error.png)
     -   The problem was solved after removing the sendEmail.js script path from base.html and adding it to contact.html.
 -   After creating the javascript functionality for confirming the password in the registration filed, both the registration
     and login forms wouldn't let the user fill in the password.
