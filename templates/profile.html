@@ -12,19 +12,36 @@
     </div>
 	<div class="center-align">
 		{% if session.user|lower == username.username|lower %}
-            <a href="{{ url_for('delete_profile', username=username._id) }}"
-               aria-label="Delete Account" class="waves-effect waves-light btn-small red darken-2">Delete Account
-            </a>
+                <a href="{{ url_for('get_ads') }}" aria-label="Cancel" class="btn-small waves-effect waves-light red darken-2">
+                    Cancel
+                </a>
+                <button onclick="document.getElementById('id01').style.display='block'" class="waves-effect waves-light btn-small light-blue darken-2">
+                    Delete Account
+                </button>
 		{% endif %}
 	</div>
-    <div class="modal">
-        <div class="modal__contents">
-            <p>Are you sure you want to delete your account?</p>
-            <form>
-                <button type="submit">Yes</button>
-                <button type="submit">No</button>
-            </form>
-        </div>
-    </div>
+	
+	<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+		<form class="modal-content" action="/action_page.php">
+			<div class="container center-align">
+				<p>Are you sure you want to delete your account?</p>
+	
+				<div class="clearfix">
+                    <a href="{{ url_for('get_ads') }}" aria-label="Cancel" class="btn-small waves-effect waves-light red darken-2">
+                        No
+                    </a>
+                    <a href="{{ url_for('delete_profile', username=username._id) }}"
+			            aria-label="Delete Account" class="waves-effect waves-light btn-small light-blue darken-2">
+                        Yes
+			        </a>
+				</div>
+			</div>
+		</form>
+	</div>
 
 {% endblock %}
+
+{% block scripts %}
+    <script src="/static/js/modal.js"></script>
+{% endblock scripts %}

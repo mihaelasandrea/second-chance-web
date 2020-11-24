@@ -104,6 +104,55 @@ nav i {
     background-color: #eaeef3;
 }
 
+/*-------------------------------------------------------------------------------------modal*/
+* {box-sizing: border-box}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  z-index: 1;
+  left: 0;
+  top: 100px;
+  width: 350px; 
+  height: 350px;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #d9e4ec;
+  left: 0;
+  top: 100px;
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+}
+
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #697272;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /*--------------------------------------------------------------------------------media-queries*/
 @media (max-width: 600px) {
     body {
