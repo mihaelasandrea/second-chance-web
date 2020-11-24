@@ -82,9 +82,9 @@ All images used for the ads posted in the website were taken by the developer an
 1. [Materizalize:](https://materializecss.com/)
     - Materialize was used to assist with the responsiveness and styling of the website, respwctively the navbar, footer, cards, card-panels, buttons.
 1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used to add the social-media icons in the footer of the page.
+    - Font Awesome was used to add the social-media icons in the footer of the page and the various icons from the different sections of login, register, contact, post ad forms.
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Share Tech Mono' font into the style.css file which is used on all text throughout the game.
+    - Google fonts were used to import the 'Roboto Slab' font into the style.css file which is used on all text throughout the website.
 1. [jQuery:](https://jquery.com/)
     - jQuery was used for the interactive features.
 1. [Randomkeygen:](https://randomkeygen.com/)
@@ -105,6 +105,8 @@ All images used for the ads posted in the website were taken by the developer an
     - PicResize was used to resize the pictures used in the README file and for the ads links.
 1. [Easycaptures:](https://easycaptures.com/)
     - EasyCaptures was used to host the images from the ads.
+1. [Flaticon](https://www.flaticon.com/authors/freepik)
+    - Flaticon was used to import the icon for the website favicon.
 # Testing
 ## Testing User Stories from User Experience (UX) Section
 ### **Testing Buyer User Stories**
