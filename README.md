@@ -143,7 +143,7 @@ All images used for the ads posted in the website were taken by the developer an
 1. [Flaticon](https://www.flaticon.com/authors/freepik)
     - Flaticon was used to import the icon for the website favicon.
 1. [Techsini](https://techsini.com/)
-    - Techsini was used to capture teh mock-ups.
+    - Techsini was used to capture the mock-ups.
 # Testing
 ## Testing User Stories from User Experience (UX) Section
 ### **Testing Buyer User Stories**
