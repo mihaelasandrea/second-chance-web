@@ -56,8 +56,32 @@ All images used for the ads posted in the website were taken by the developer an
 -   ![post](static/assets/images/wireframes/post.png)
 -   ![contact](static/assets/images/wireframes/contact.png)
 -   ![mobile](static/assets/images/wireframes/mobile.png)
-## Collections in MongoDB
--   The database for Second Chance Web contains 6 collections: ads, categories, conditions, ireland_areas, n_ireland_areas (which stands for North Ireland areas) and users.
+## Second Chance Collections in MongoDB
+-   The database for Second Chance Web contains 6 collections:
+    -   Ads
+    -   Categories
+        -   Antiques.
+        -   Art.
+        -   Baby Stuff.
+        -   Bags.
+        -   Bikes.
+        -   Books.
+        -   Clothing.
+        -   Electrics.
+        -   Furniture.
+        -   Household.
+        -   Pets.
+        -   Shoes.
+        -   Toys.
+    -   Conditions.
+        -   New.
+        -   Good as New.
+        -   Used.
+    -   Ireland_areas.
+        -   Ireland Counties.
+    -   N_ireland_areas.
+        -    North Ireland counties.
+    -   Users.
 # Features
 1. Responsiveness on different device sizes.
 1. Mobile collapse button.
