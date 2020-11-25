@@ -147,6 +147,41 @@ All images used for the ads posted in the website were taken by the developer an
 1. [Techsini](https://techsini.com/)
     - Techsini was used to capture the mock-ups.
 # Testing
+## Functionality
+### Navigation bar
+-   Fixed navigation bar. It stays on top while scrolling down the page.
+-   Top left brand (logo) section. When click it links to the home page and brings the user from any other webpage to the home page.
+-   Top right the internal links to the main webpages when the user is not logged in: Home, Log in, Register, Contact Us. The user
+    can visit the home page where the ads are displayed, log in/register or submit a contact form.
+-   When the user is logged in, the navbar displays Home, My Account, Post Ad, Log Out and Contact Us pages.
+-   On mobile devices the navbar displays an active burger-menu icon. If clicked, the icon displays the list of all functional page links.
+### Ads
+-   Are displayed all on the home page.
+-   The card reveal opens up by clicking on the photo or title of the card-content. It closes back by ckicking on the x symbol.
+### Search bar
+-   The user can search ads by typing inside the search bar words selected from the title, description and category name sections of the cards.
+-   The reset button brings the user back to the home page to all ads.
+### Redirect pages
+-   If the user tries to register with a username which already exists in the database, the message "Username already exists"
+    flashes and the user gets redirected to log in page.
+-   If the user tries to log in with a username which doesn't exist in the database, the message "Username doesn't exists"
+    flashes and the user gets redirected to register page.
+### Flash messages
+-   When a new ad is posted the user gets the "Ad successfully posted" message.
+-   When an existing ad is edited the user gets the "Ad successfully updated" message.
+-   When an existing ad is deleted the user gets the "Ad successfully deleted" message.
+-   When a new user is registered the user gets the "Registration Successful" message.
+-   When an existing user logs in the user gets the "Welcome (username)" message.
+-   When an existing user logs in the user gets the "Welcome (username)" message.
+-   When an existing user logs in with an incorrect username or password the user gets the "Incorrect User or/and Password" message.
+-   When an existing user logs out the user gets the "You have been logged out" message.
+-   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
+-   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
+### Cancel Buttons 
+-   For each submitting type of buttons, the user have the cancel buttons which redirects the user back to the home page.
+### Footer section
+-   The footer section is fixed on the bottom of all the web pages.
+-   The external social media links from the footer sections open in an external window.
 ## Testing User Stories from User Experience (UX) Section
 ### **Testing Buyer User Stories**
 1. **As a buyer user I want to be able to easily find the products I'm looking for buying.**
@@ -200,7 +235,7 @@ All images used for the ads posted in the website were taken by the developer an
     4. The user can change the desired fields and after clicking the edit button, the changes are saved.
 
 ## Validation
--   [W3C Markup Validator](https://validator.w3.org/) the results fail because the HTML validator doesn't recognize jinja.
+-   [W3C Markup Validator](https://validator.w3.org/) Results pass. No errors.
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) Results pass. No errors.
 -   [JavaScript Validator](https://jshint.com/) Results pass. No errors.
 -   [Python Validator](http://pep8online.com/) Results pass. No errors.
@@ -210,6 +245,7 @@ All images used for the ads posted in the website were taken by the developer an
 -   Friends and family members were asked to review the website to point out any bugs and/or user experience issues.
 -   404 page not found was tested while trying to fix other issues, it just popped up and the go back home link worked just fine.
 -   No errors in the console while working on different webpages.
+-   For mobile responsiveness, the text and icons font-size in the cards and card-panels forms was reduced in the media query accordingly and also the modal width and height.
 ## Fixed Bugs
 -   When trying to delete the account, the user gets the notification that the account is deleted but the account remains logged in.
     -   The problem was fixed by removing user's session cookies by adding 'session.pop("user")' and redirect user to login page.
