@@ -229,6 +229,8 @@ All images used for the ads posted in the website were taken by the developer an
     -   Because the console didn't throw any error, we checked the html code through the html validator and so we got to see that the issue
         laid in the fact that the modal id was repeating itself for every ad posted in the website.
     -   The problem was solved by adding to all three sections triggering the id a jinja index loop.
+## Found Bugs
+-   After submitting the message in the contact form The flash messages don't display as expected because they interract with the javascript sendEmail.js file.
 # Deployment
 1. For this project you need to create a database in [MongoDB](https://www.mongodb.com/)
 1. First you need to create a new workspace in GitPod.
