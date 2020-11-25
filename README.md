@@ -378,7 +378,7 @@ $ git commit -m "Add requirements.txt"
 ```
 
 ```
-$ git add Procfile`
+$ git add Procfile
 ```
 
 ```
