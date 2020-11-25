@@ -6,24 +6,19 @@
 
 Our generation is facing a major global concern: adapting our current lifestyle to achieve a better environment sustainability.
 
-
 The scope of the website is to give good products a “second chance” (as the title suggests) so that they can fulfill their technical lifetime
 before being discarded.
 
-The website I created is a second-hand products web-shop where users can sale different things they don’t need but still in proper functionality. 
+The website I created is a second-hand products web-shop where users can sell different things they don’t need but still in proper functionality. 
 
-
-The purpose of the **buyer visitors** is to find good products at affordable prices which otherwise would be too expensive or temporary necessary.
+The purpose of the **buyer visitors** is to find good products at affordable prices which otherwise would be too expensive or necessary just temporary.
 Like people relocating for a short-term and they need some furniture or people who wouldn’t spend a lot of money on new bikes for the children
 and they rather buy second hand until kids grow old enough to use the same size for longer time.
 
-
 The purpose of the **seller visitors** is to be able to get some money out of the products which don’t serve their needs anymore.
 
-
-My personal purpose as a developer in creating Second Chance website is learning how to design, develop and implement a back-end for a web
+My personal purpose as a developer in creating Second Chance Web website is learning how to design, develop and implement the back-end for a web
 application using Python, Flask micro-framework and MongoDB database.
-
 
 The creation of this website is subject solely to educational purposes.
 
@@ -101,6 +96,7 @@ All images used for the ads posted in the website were taken by the developer an
 1. Confirmation messages following commands as registration, logging in, logging out, post ad, edit and delete post, etc.
 1. Contact form with 3 fields for filing in: username, email and message.
 1. 404 page implemented.
+1. Favicon.
 1. Defensive programming. The Delete Account button in the profile page triggers a dialog modal which gives the user the
     possibility to choose from deleting the account or not. Same works for Delete button for the ads users can post.
 ## Features left to implement
@@ -213,6 +209,7 @@ All images used for the ads posted in the website were taken by the developer an
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   Friends and family members were asked to review the website to point out any bugs and/or user experience issues.
 -   404 page not found was tested while trying to fix other issues, it just popped up and the go back home link worked just fine.
+-   No errors in the console while working on different webpages.
 ## Fixed Bugs
 -   When trying to delete the account, the user gets the notification that the account is deleted but the account remains logged in.
     -   The problem was fixed by removing user's session cookies by adding 'session.pop("user")' and redirect user to login page.
@@ -229,8 +226,8 @@ All images used for the ads posted in the website were taken by the developer an
     -   Because the console didn't throw any error, we checked the html code through the html validator and so we got to see that the issue
         laid in the fact that the modal id was repeating itself for every ad posted in the website.
     -   The problem was solved by adding to all three sections triggering the id a jinja index loop.
-## Found Bugs
--   After submitting the message in the contact form The flash messages don't display as expected because they interract with the javascript sendEmail.js file.
+## Known Bugs
+-   After submitting the message in the contact form the flash message doesn't display as expected because it interracts with the javascript sendEmail.js file.
 # Deployment
 1. For this project you need to create a database in [MongoDB](https://www.mongodb.com/)
 1. First you need to create a new workspace in GitPod.
