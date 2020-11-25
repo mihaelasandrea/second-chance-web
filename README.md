@@ -24,6 +24,50 @@ The creation of this website is subject solely to educational purposes.
 
 ![Mock-up](static/assets/images/readme/mock-up.png)
 
+# Table of contents
+1. [User Experience](#user-experience)
+    1. [User Sories](#user-stories)
+        1. [Buyer Users](#buyer-users)
+        1. [Seller Users](#seller-users)
+    1. [Design](#design)
+        1. [Overall Design](#overall-design)
+        1. [Color Palette](#color-pallette)
+        1. [Typography](#typography)
+        1. [Imagery](#imagery)
+    1. [Wireframes](#wireframes)
+    1. [Second Chance Web Collections in MongoDB](#second-chance-collections-in-mongodb)
+1. [Features](#features)
+    1. [Features Left to Implement](#features-left-to-implement)
+1. [Technologies Used](#technologies-used)
+    1. [Languages Used](#anguages-used)
+    1. [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
+1. [Testing](#testing)
+    1. [Functionality](#unctionality)
+        1. [Navigation bar](#navigation-bar)
+        1. [Ads](#ads)
+        1. [Search bar](#search-bar)
+        1. [Redirect pages](#redirect-pages)
+        1. [Flash messages](#flash-messages)
+        1. [Cancel Buttons](#cancel-buttons)
+        1. [Footer section](#footer-section)
+    1. [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-(UX)-Section)
+        1. [Testing Buyer User Stories](#testing-buyer-user-stories)
+        1. [Testing Seller User Stories](#testing-seller-user-stories)
+    1. [Validation](#validation)
+    1. [Further Testing](#further-testing)
+    1. [Fixed Bugs](#fixed-bugs)
+    1. [Known Bugs](#known-bugs)
+1. [Deployment](#deployment)
+1. [Forking the GitHub Repository](#forking-the-gitHub-repository)
+1. [Making a Local Clone](#making-a-local-clone)
+1. [Credits](#credits)
+    1. [Images](#images)
+    1. [Code](#code)
+    1. [Tutor Support](#tutor-support)
+    1. [Mentor](#mentor)
+    1. [Slack Comunity](#slack-comunity)
+    1. [My Family](#my-family)
+
 # User Experience
 ## User Stories
 ### **Buyer Users**
@@ -53,7 +97,7 @@ All images used for the ads posted in the website were taken by the developer an
 -   ![post](static/assets/images/wireframes/post.png)
 -   ![contact](static/assets/images/wireframes/contact.png)
 -   ![mobile](static/assets/images/wireframes/mobile.png)
-## Second Chance Collections in MongoDB
+## Second Chance Web Collections in MongoDB
 -   The database for Second Chance Web contains 6 collections:
     -   Ads
     -   Categories
@@ -106,12 +150,12 @@ All images used for the ads posted in the website were taken by the developer an
 1. The User's option to post an advertising with the registered profile details.
 1. The contact form to being automatically filled in with the username and emailaddress of the user currently logged in.
 # Technologies Used
-### Languages Used
+## Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://nl.wikipedia.org/wiki/JavaScript)
 -   [Python3](https://en.wikipedia.org/wiki/Python_(programming_language))
-### Frameworks, Libraries & Programs Used
+## Frameworks, Libraries & Programs Used
 1. [MongoDB:](https://www.mongodb.com/)
     -   MongoDB was used for creating the database collections.
 1. [Flask:](https://flask.palletsprojects.com/en/1.1.x/)
