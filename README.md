@@ -48,6 +48,7 @@ The creation of this website is subject solely to educational purposes.
         1. [Search bar](#search-bar)
         1. [Redirect pages](#redirect-pages)
         1. [Flash messages](#flash-messages)
+        1. [Contact Form](#contact-form)
         1. [Cancel Buttons](#cancel-buttons)
         1. [Footer section](#footer-section)
     1. [Testing User Stories from User Experience (UX) Section](#testing-user-stories-from-user-experience-(UX)-Section)
@@ -221,6 +222,8 @@ All images used for the ads posted in the website were taken by the developer an
 -   When an existing user logs out the user gets the "You have been logged out" message.
 -   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
 -   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
+### Contact Form
+-   The message submitted arrives in the connected email, but the form doesn't refresh as explained in the known bugs section.
 ### Cancel Buttons 
 -   For each submitting type of buttons, the user have the cancel buttons which redirects the user back to the home page.
 ### Footer section
@@ -307,7 +310,8 @@ All images used for the ads posted in the website were taken by the developer an
         laid in the fact that the modal id was repeating itself for every ad posted in the website.
     -   The problem was solved by adding to all three sections triggering the id a jinja index loop.
 ## Known Bugs
--   After submitting the message in the contact form the flash message doesn't display as expected because it interracts with the javascript sendEmail.js file.
+-   After submitting the message in the contact form the flash message doesn't display as expected and the form doesn't redirects to home page
+    because it interracts with the javascript sendEmail.js file.
 # Deployment
 1. For this project you need to create a database in [MongoDB](https://www.mongodb.com/)
 1. First you need to create a new workspace in GitPod.
