@@ -223,7 +223,8 @@ All images used for the ads posted in the website were taken by the developer an
 -   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
 -   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
 ### Contact Form
--   The submitted message arrives in the connected email, but the flash message doesn't display as expected as explained in the known bugs section.
+-   The submitted message arrives in the connected email, but the flash message doesn't display as expected as explained in the known
+    bugs section. For this reason, in the javascript code was added "this.reset()" so that at least the form gets refreshed after being submitted.
 ### Cancel Buttons 
 -   For each submitting type of buttons, the user have the cancel buttons which redirects the user back to the home page.
 ### Footer section
@@ -460,7 +461,7 @@ Special thanks to **Igor Basuga** for his kind support and valuable explanations
 Special thanks to **Kevin** for his kind support helping me out with connecting the contact us form to the email address and pointing
 me in the right direction for fixing the confirmation password functionality.
 
-Special thanks to **Cormac** forr his patience helping me out having a better understanding about the POST method.
+Special thanks to **Cormac** for his patience helping me out having a better understanding about the POST method.
 
 ## Mentor
 Special thanks to my mentor **Dick Vlaanderen** for his helpful feedback, support and valuable guidance with UX experience.
