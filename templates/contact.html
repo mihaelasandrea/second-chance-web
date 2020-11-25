@@ -4,7 +4,7 @@
 <h4 class="center-align">Contact Us</h4>
 
 <div class="row center-form">
-	<form class="col s12" onsubmit="return sendMail(this);" id="contact-form">
+	<form class="col s12" method="POST" id="contact-form">
 		<div class="card-panel z-depth-3">
 			<div class="row">
 				<div class="input-field col s12">
@@ -36,7 +36,7 @@
                 <a href="{{ url_for('get_ads') }}" aria-label="Cancel" class="btn-small waves-effect waves-light red darken-2">
                     Cancel
                 </a>
-				<button type="submit" aria-label="Submit" class="btn-small waves-effect waves-light light-blue darken-2">
+				<button type="submit" value="Send" aria-label="Submit" class="btn-small waves-effect waves-light light-blue darken-2">
                     Submit
                 </button>
 			</div>

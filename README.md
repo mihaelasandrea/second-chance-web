@@ -223,7 +223,7 @@ All images used for the ads posted in the website were taken by the developer an
 -   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
 -   When an existing user deletes the user gets the "Profile Successfully Deleted" message.
 ### Contact Form
--   The message submitted arrives in the connected email, but the form doesn't refresh as explained in the known bugs section.
+-   The submitted message arrives in the connected email, but the flash message doesn't display as expected as explained in the known bugs section.
 ### Cancel Buttons 
 -   For each submitting type of buttons, the user have the cancel buttons which redirects the user back to the home page.
 ### Footer section
