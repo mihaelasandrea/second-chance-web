@@ -460,8 +460,10 @@ Special thanks to **Igor Basuga** for his kind support and valuable explanations
 Special thanks to **Kevin** for his kind support helping me out with connecting the contact us form to the email address and pointing
 me in the right direction for fixing the confirmation password functionality.
 
+Special thanks to **Cormac** forr his patience helping me out having a better understanding about the POST method.
+
 ## Mentor
-Special thanks to my mentor Dick Vlaanderen for his helpful feedback, support and valuable guidance with UX experience.
+Special thanks to my mentor **Dick Vlaanderen** for his helpful feedback, support and valuable guidance with UX experience.
 And a huge thank you for helping me out fixing the dialog modal issue for deleting the ads. It was brilliant to see all the steps he followed
 looking for hints to solve the problem. Happy to have learned so much from him in such a short time.
 
