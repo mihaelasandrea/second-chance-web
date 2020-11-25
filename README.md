@@ -43,11 +43,13 @@ The creation of this website is subject solely to educational purposes.
 1. As a seller user I want to be able to post different products for advertising with the selling scope.
 1. As a seller user I want to be the only user able to update and delete my posts.
 ## Design
-### Color Palette
+### **Overall design**
+For the overall design I chose neutral colors and simple formats, no background images and no unnecessary styling because I want the posted ads to be the center of users' attention.
+### **Color Palette**
 ![Color Palette](static/assets/images/readme/colorpalette.png)
-### Typography
+### **Typography**
 Main font-family used throughout the website is [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab?query=rob&sidebar.open=true&selection.family=Roboto+Slab) with Sans serif as fall back.
-### Imagery
+### **Imagery**
 All images used for the ads posted in the website were taken by the developer and are subject for demonstration only.
 ## Wireframes
 -   ![home](static/assets/images/wireframes/home.png)
@@ -90,12 +92,12 @@ All images used for the ads posted in the website were taken by the developer an
 1. Interactive cards displaying succint information of the advertised products both on card content and card reveal.
     Card reveal gets triggered when clicked on the photo or on the title of the card content.
 1. Registration form fields: Username, Password and Password confirmation.
-1. Delete account option.
+1. Delete account option with dialog modal pops up to ask the user to confirm the deletion.
 1. Log in form fields: Username and Password.
 1. Log out.
 1. Post advertising form fields: Category, Url for photos, Title, Description, Price,
     Condition, Area, Telephone, Email. Option buttons for edit and cancel which brings the user to the homepage.
-1. Options for Edit and Delete the post available only for the user who posted.
+1. Options for Edit and Delete the post available only for the user who posted. The delete button triggers a dialog modal asking for deletion confirmation.
 1. Confirmation messages following commands as registration, logging in, logging out, post ad, edit and delete post, etc.
 1. Contact form with 3 fields for filing in: username, email and message.
 1. 404 page implemented.
@@ -103,6 +105,10 @@ All images used for the ads posted in the website were taken by the developer an
     possibility to choose from deleting the account or not. Same works for Delete button for the ads users can post.
 ## Features left to implement
 1. Side Filter with index options for area, condition, category.
+1. Add to User's Profile the contact details and password.
+1. The User's option to edit the profile.
+1. The User's option to post an advertising with the registered profile details.
+1. The contact form to being automatically filled in with the username and emailaddress of the user currently logged in.
 # Technologies Used
 ### Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -206,6 +212,7 @@ All images used for the ads posted in the website were taken by the developer an
 -   The website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   Friends and family members were asked to review the website to point out any bugs and/or user experience issues.
+-   404 page not found was tested while trying to fix other issues, it just popped up and the go back home link worked just fine.
 ## Fixed Bugs
 -   When trying to delete the account, the user gets the notification that the account is deleted but the account remains logged in.
     -   The problem was fixed by removing user's session cookies by adding 'session.pop("user")' and redirect user to login page.

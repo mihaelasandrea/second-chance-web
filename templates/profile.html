@@ -10,6 +10,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ==================================================================================================== Cancel/Delete buttons -->
 	<div class="center-align">
 		{% if session.user|lower == username.username|lower %}
                 <a href="{{ url_for('get_ads') }}" aria-label="Cancel" class="btn-small waves-effect waves-light red darken-2">
@@ -21,6 +23,7 @@
 		{% endif %}
 	</div>
 	
+    <!-- =============================================================================================================Dialog Modal -->
 	<div id="id01" class="modal">
 		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 		<div class="modal-content">

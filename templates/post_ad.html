@@ -5,7 +5,7 @@
 
 	<div class="row card-panel waves-effect waves-block waves-light z-depth-3">
 		<form class="col s12" method="POST" action="{{ url_for('post_ad') }}">
-            <!---------------------------------------------------------------------------- category -->
+            <!-- ================================================================================================ category -->
             <div class="row">
 				<div class="input-field">
                     <i class="fas fa-folder-open prefix"></i>
@@ -18,7 +18,7 @@
 					<label for="category_name">Category</label>
 				</div>
             </div>
-            <!------------------------------------------------------------------------------- photo -->
+            <!-- ===================================================================================================== photo -->
             <div class="row">
                 <div class="input-field">
                     <i id="photo-icon" class="fas fa-image prefix"></i>
@@ -26,7 +26,7 @@
                     <label for="photo_url">Please add photo URL</label>
                 </div>
             </div>
-            <!------------------------------------------------------------------------------- title -->
+            <!-- ===================================================================================================== title -->
 			<div class="row">
 				<div class="input-field">
 					<i class="fas fa-pencil-alt prefix"></i>
@@ -35,7 +35,7 @@
 					<label for="ad_title">Title</label>
                 </div>
 			</div>
-            <!-------------------------------------------------------------------------- description -->
+            <!-- ================================================================================================ description -->
 			<div class="row">
 				<div class="input-field">
                     <i class="fas fa-align-left prefix"></i>
@@ -44,7 +44,7 @@
 					<label for="ad_description">Description</label>
 				</div>
 			</div>
-            <!-------------------------------------------------------------------------------- price -->
+            <!-- ======================================================================================================= price -->
             <div class="row">
 				<div class="input-field">
 					<i class="fas fa-tag prefix"></i>
@@ -52,7 +52,7 @@
 					<label for="price">Price</label>
                 </div>
 			</div>
-            <!---------------------------------------------------------------------------- condition -->
+            <!-- =================================================================================================== condition -->
             <div class="row">
 				<div class="input-field">
                     <i class="fas fa-clipboard prefix"></i>
@@ -65,7 +65,7 @@
 					<label for="condition_type">Condition</label>
 				</div>
 			</div>
-            <!--------------------------------------------------------------------------------- area -->
+            <!-- ======================================================================================================= area -->
             <div class="row">
 				<div class="input-field">
                     <i class="fas fa-map-marker-alt prefix"></i>
@@ -85,7 +85,7 @@
                     <label for="area_name">Areas</label>
                 </div>
 			</div>
-            <!---------------------------------------------------------------------------- telephone -->
+            <!-- =================================================================================================== telephone -->
             <div class="row">
                 <div class="input-field">
                     <i class="fas fa-phone prefix"></i>
@@ -94,7 +94,7 @@
                     <label for="telephone">Telephone</label>
                 </div>
 			</div>
-            <!-------------------------------------------------------------------------------- email -->
+            <!-- ======================================================================================================= email -->
             <div class="row">
                 <div class="input-field">
                     <i class="fas fa-envelope prefix"></i>
@@ -102,7 +102,7 @@
                     <label for="email">Email</label>
                 </div>
 			</div>
-            <!------------------------------------------------------------------------- submit button -->
+            <!-- =============================================================================================== submit button -->
             <div class="row">
                 <div class="center-align">
                     <a href="{{ url_for('get_ads') }}" aria-label="Cancel" class="btn-small waves-effect waves-light red darken-2">
