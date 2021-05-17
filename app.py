@@ -138,9 +138,9 @@ def post_ad():
     ireland_areas = mongo.db.ireland_areas.find().sort("area_name", 1)
     n_ireland_areas = mongo.db.n_ireland_areas.find().sort("area_name", 1)
     return render_template("post_ad.html", categories=categories,
-                        conditions=conditions,
-                        ireland_areas=ireland_areas,
-                        n_ireland_areas=n_ireland_areas)
+                                           conditions=conditions,
+                                           ireland_areas=ireland_areas,
+                                           n_ireland_areas=n_ireland_areas)
 
 
 @app.route("/edit_ad/<ad_id>", methods=["GET", "POST"])
@@ -197,4 +197,4 @@ def page_not_found(e):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)
